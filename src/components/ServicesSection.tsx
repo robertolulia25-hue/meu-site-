@@ -16,8 +16,8 @@ const services = [
   },
   {
     icon: FileText,
-    title: "Direito Civil",
-    description: "Assessoria completa em questões patrimoniais, contratos, responsabilidade civil e demais demandas do âmbito civil."
+    title: "Direito Médico",
+    description: "Atuação em cobertura de medicamentos, revisão de cláusulas contratuais, cobertura de tratamentos e home care junto a planos de saúde."
   },
   {
     icon: Users,
