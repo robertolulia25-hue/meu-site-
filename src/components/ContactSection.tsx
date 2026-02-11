@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { Phone, Mail, MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const navigate = useNavigate();
 
-  const whatsappLink = "https://wa.me/5511982727659?text=Olá! Gostaria de agendar uma consulta.";
   const emailLink = "mailto:robertolulia@adv.oabsp.org.br";
   const phoneNumber = "(11) 98272-7659";
 
@@ -37,11 +38,9 @@ const ContactSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             {/* WhatsApp - Featured */}
-            <motion.a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="md:col-span-2 group"
+            <motion.div
+              onClick={() => navigate("/obrigado")}
+              className="md:col-span-2 group cursor-pointer"
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -77,7 +76,7 @@ const ContactSection = () => {
                   </div>
                 </div>
               </div>
-            </motion.a>
+            </motion.div>
 
             {/* Phone */}
             <motion.a
