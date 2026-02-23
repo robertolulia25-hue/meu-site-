@@ -21,8 +21,8 @@ const services = [
   },
   {
     icon: Users,
-    title: "Processo Civil",
-    description: "Representação judicial em todas as instâncias, com estratégia processual eficiente e acompanhamento dedicado."
+    title: "Direito Digital",
+    description: "Indenização por comentários ofensivos, desbloqueio e recuperação de contas em redes sociais e e-mails, proteção de dados (LGPD), contratos eletrônicos e assinaturas digitais."
   },
   {
     icon: Scroll,
