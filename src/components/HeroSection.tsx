@@ -31,11 +31,29 @@ const HeroSection = () => {
           <motion.img 
             src={logo} 
             alt="Roberto Lima - Advogado & Consultoria"
-            className="w-64 md:w-80 lg:w-96 mb-8 drop-shadow-2xl"
+            className="w-48 md:w-60 lg:w-72 mb-4 drop-shadow-2xl"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.2 }}
           />
+
+          {/* Name */}
+          <motion.h1
+            className="font-serif text-3xl md:text-5xl lg:text-6xl text-gradient-gold tracking-wide mb-2"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }}
+          >
+            Roberto Lima
+          </motion.h1>
+          <motion.p
+            className="font-serif-elegant text-sm md:text-base text-gold/80 tracking-[0.3em] uppercase mb-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            Advogado & Consultoria
+          </motion.p>
 
           {/* Tagline */}
           <motion.p 
