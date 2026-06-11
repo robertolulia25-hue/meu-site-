@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo-rl.png";
 
 const HeroSection = () => {
   const scrollToContact = () => {
