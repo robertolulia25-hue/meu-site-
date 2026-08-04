@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /obrigado
 
-Sitemap: https://advo-consult-connect.lovable.app/sitemap.xml
+Sitemap: https://www.robertolimajuridico.com.br/sitemap.xml
