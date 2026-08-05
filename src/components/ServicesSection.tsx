@@ -7,7 +7,8 @@ const services = [
   {
     icon: Scale,
     title: "Direito do Consumidor",
-    description: "Defesa dos seus direitos nas relações de consumo, com atuação em ações judiciais e negociações extrajudiciais."
+    description: "Defesa dos seus direitos nas relações de consumo, com atuação em ações judiciais e negociações extrajudiciais.",
+    href: "/direito-consumidor"
   },
   {
     icon: Building2,
