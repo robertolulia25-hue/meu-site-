@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { Scale, Building2, FileText, Users, Scroll, PenTool } from "lucide-react";
 
 const services = [
