@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { Scale, Building2, FileText, Users, Scroll, PenTool } from "lucide-react";
 
 const services = [
   {
     icon: Scale,
     title: "Direito do Consumidor",
-    description: "Defesa dos seus direitos nas relações de consumo, com atuação em ações judiciais e negociações extrajudiciais."
+    description: "Defesa dos seus direitos nas relações de consumo, com atuação em ações judiciais e negociações extrajudiciais.",
+    href: "/direito-consumidor"
   },
   {
     icon: Building2,
@@ -91,12 +93,8 @@ const ServicesSection = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="group relative"
-            >
+          {services.map((service, index) => {
+            const card = (
               <div className="h-full bg-gradient-card p-8 rounded-sm border border-border/50 hover:border-gold/30 transition-all duration-500 hover:shadow-gold">
                 {/* Icon */}
                 <div className="mb-6 relative">
@@ -114,8 +112,24 @@ const ServicesSection = () => {
                   {service.description}
                 </p>
               </div>
-            </motion.div>
-          ))}
+            );
+
+            return (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                className="group relative"
+              >
+                {service.href ? (
+                  <Link to={service.href} className="block h-full">
+                    {card}
+                  </Link>
+                ) : (
+                  card
+                )}
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
     </section>
