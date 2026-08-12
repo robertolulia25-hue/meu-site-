@@ -236,6 +236,97 @@ const ProdutoComDefeito = () => {
         </div>
       </section>
 
+      <section className="py-24 bg-gradient-dark relative overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="gold-line mb-6" />
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">
+              A empresa não resolveu o problema. E agora?
+            </h2>
+
+            <div className="space-y-6 text-muted-foreground leading-relaxed text-justify mb-12">
+              <p>
+                Quando o fornecedor não soluciona o problema ou apresenta uma resposta que não atende ao que foi solicitado, é possível avaliar outros caminhos para buscar a solução. A medida mais adequada depende das circunstâncias do caso, do que já foi feito e dos documentos disponíveis.
+              </p>
+            </div>
+
+            <div className="space-y-12">
+              <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                <div className="flex-shrink-0">
+                  <span className="font-serif text-4xl md:text-5xl text-gold/40 leading-none">
+                    01
+                  </span>
+                </div>
+                <div className="flex-1 pt-1 md:pt-2">
+                  <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
+                    Tentar uma solução pelos canais adequados
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-justify">
+                    Se ainda não houver uma tentativa formal de solução, pode ser importante registrar a reclamação diretamente com o fornecedor, utilizando canais que permitam comprovar o contato e a resposta recebida. O registro dessa tentativa também ajuda a documentar a evolução do problema.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                <div className="flex-shrink-0">
+                  <span className="font-serif text-4xl md:text-5xl text-gold/40 leading-none">
+                    02
+                  </span>
+                </div>
+                <div className="flex-1 pt-1 md:pt-2">
+                  <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
+                    Utilizar canais de defesa do consumidor
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-justify">
+                    Dependendo da situação e da empresa envolvida, também podem existir alternativas administrativas, como o Procon ou o Consumidor.gov.br. A plataforma Consumidor.gov.br permite o contato direto entre consumidores e empresas participantes e possibilita o acompanhamento da reclamação e da resposta apresentada pelo fornecedor.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                <div className="flex-shrink-0">
+                  <span className="font-serif text-4xl md:text-5xl text-gold/40 leading-none">
+                    03
+                  </span>
+                </div>
+                <div className="flex-1 pt-1 md:pt-2">
+                  <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
+                    Avaliar as medidas jurídicas cabíveis
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-justify">
+                    Quando as tentativas de solução não produzem resultado, pode ser necessário analisar juridicamente a situação. A partir dos documentos, do histórico de atendimento e das características do problema, é possível verificar quais direitos podem ser exigidos e quais medidas podem ser consideradas.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                <div className="flex-shrink-0">
+                  <span className="font-serif text-4xl md:text-5xl text-gold/40 leading-none">
+                    04
+                  </span>
+                </div>
+                <div className="flex-1 pt-1 md:pt-2">
+                  <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
+                    Definir o caminho mais adequado
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-justify">
+                    Nem todo problema de consumo precisa necessariamente chegar ao Poder Judiciário. Em alguns casos, uma solução administrativa ou uma negociação pode ser suficiente. Em outros, diante da resistência do fornecedor ou das características do caso, pode existir fundamento para a adoção de uma medida judicial. A definição do caminho depende da análise concreta da situação.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-14 pt-8 border-t border-gold/20">
+              <p className="font-serif-elegant text-lg md:text-xl text-foreground/90 text-center leading-relaxed">
+                O mais importante é não deixar o problema sem solução por falta de orientação sobre o próximo passo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
 
       <section className="py-20 bg-navy relative overflow-hidden">
         <div className="container mx-auto px-6">
