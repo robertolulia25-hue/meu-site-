@@ -234,19 +234,19 @@ const DireitoMedico = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed text-justify">
               <p>
-                Os direitos aplicáveis em uma situação de saúde dependem da natureza concreta do caso. Não existe uma resposta única para todos os problemas médicos ou de planos de saúde, por isso a análise deve considerar os fatos, os documentos, o contrato, quando houver, e as circunstâncias específicas de cada pessoa.
+                Os direitos aplicáveis em uma situação de saúde dependem da natureza concreta do caso. Não existe uma resposta única para todos os problemas médicos ou de planos de saúde. Por isso, a análise deve considerar os fatos, os documentos, o contrato, quando houver, e as circunstâncias específicas de cada pessoa.
               </p>
               <p>
-                A assistência à saúde é um direito fundamental, mas a forma como ela pode ser exigida varia conforme a situação. Em alguns casos, o ponto central é a análise individualizada da necessidade de tratamento e da indicação médica. Em outros, é preciso verificar as regras contratuais aplicáveis ao plano de saúde, os procedimentos previstos e as condições estabelecidas para a cobertura.
+                A assistência à saúde é um direito fundamental, mas a forma de exigir esse direito varia conforme a situação. Em alguns casos, o ponto central é a análise individualizada da necessidade do tratamento e da indicação médica. Em outros, é preciso verificar as regras contratuais do plano de saúde, os procedimentos previstos e as condições estabelecidas para a cobertura.
               </p>
               <p>
                 Quando uma operadora de saúde nega a cobertura de um tratamento, exame ou cirurgia, é necessário examinar a justificativa apresentada, a indicação médica, o contrato e o procedimento em questão. Nem toda negativa é abusiva ou ilegal: a análise depende de uma verificação técnica e jurídica do caso.
               </p>
               <p>
-                O acesso a medicamentos e tratamentos pelo sistema público de saúde também possui regras específicas, e a verificação dos requisitos legais pode ser importante para entender as possibilidades de obtenção do tratamento.
+                O acesso a medicamentos e tratamentos pelo sistema público de saúde também possui regras específicas. Verificar os requisitos legais pode ser importante para entender as possibilidades de obtenção do tratamento.
               </p>
               <p>
-                Situações envolvendo possível falha na prestação de serviço médico ou hospitalar exigem análise cuidadosa. O simples fato de o resultado ter sido diferente do esperado não caracteriza, por si só, uma falha. É preciso examinar o histórico do atendimento, os prontuários, as informações repassadas e as circunstâncias concretas.
+                Situações que envolvam possível falha na prestação do serviço médico ou hospitalar exigem análise cuidadosa. O simples fato de o resultado ter sido diferente do esperado não caracteriza, por si só, uma falha. É preciso examinar o histórico do atendimento, os prontuários, as informações repassadas e as circunstâncias concretas.
               </p>
               <p>
                 Dependendo da situação, podem ser consideradas medidas administrativas ou judiciais. A definição do caminho mais adequado deve ser feita caso a caso, sem promessas de resultado e com base na documentação disponível.
