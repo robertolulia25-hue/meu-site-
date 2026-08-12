@@ -164,8 +164,79 @@ const ProdutoComDefeito = () => {
         </div>
       </section>
 
+      {/* Como agir quando o produto apresenta defeito */}
+      <section className="py-24 bg-gradient-dark relative overflow-hidden">
+        <div className="container mx-auto px-6">
+          <motion.div
+            className="max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="gold-line mb-6" />
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">
+              Como agir quando o produto apresenta defeito?
+            </h2>
 
-      {/* Chamada para contato */}
+            <div className="space-y-12">
+              {[
+                {
+                  number: "01",
+                  title: "Reúna os documentos",
+                  text: "O primeiro passo é reunir as informações e os documentos relacionados à compra. Nota fiscal, comprovante de pagamento, pedido, contrato ou certificado de garantia podem ajudar a demonstrar a aquisição e as condições da relação de consumo. Quando possível, também é importante guardar fotografias, vídeos ou outros registros que demonstrem o problema apresentado pelo produto."
+                },
+                {
+                  number: "02",
+                  title: "Comunique o fornecedor",
+                  text: "Em seguida, é importante comunicar o fornecedor sobre o problema e registrar a tentativa de solução. Guarde protocolos de atendimento, e-mails, mensagens, ordens de serviço e respostas recebidas. Esses registros ajudam a demonstrar o que foi informado à empresa e quais providências foram ou não tomadas."
+                },
+                {
+                  number: "03",
+                  title: "Registre o atendimento",
+                  text: "Quando o produto é encaminhado para reparo, a documentação desse atendimento também é importante. A ordem de serviço, por exemplo, pode registrar a data em que o produto foi entregue para análise ou conserto e ajudar a acompanhar o prazo para solução do vício."
+                },
+                {
+                  number: "04",
+                  title: "Avalie os próximos passos",
+                  text: "Se o problema não for solucionado ou se a resposta apresentada pelo fornecedor não for adequada, é possível avaliar outras medidas, administrativas ou judiciais, conforme as características do caso. Nessa etapa, a análise dos documentos e de tudo o que já ocorreu permite identificar qual caminho pode ser mais adequado."
+                }
+              ].map((step, i) => (
+                <motion.div
+                  key={step.number}
+                  className="flex gap-6 md:gap-8"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                >
+                  <div className="flex-shrink-0">
+                    <span className="font-serif text-4xl md:text-5xl text-gold/40 leading-none">
+                      {step.number}
+                    </span>
+                  </div>
+                  <div className="flex-1 pt-1 md:pt-2">
+                    <h3 className="font-serif text-xl md:text-2xl text-foreground mb-4">
+                      {step.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed text-justify">
+                      {step.text}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="mt-14 pt-8 border-t border-gold/20">
+              <p className="font-serif-elegant text-lg md:text-xl text-foreground/90 text-center leading-relaxed">
+                Quanto mais bem documentada estiver a situação, mais segura será a avaliação dos direitos e das medidas que podem ser adotadas.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+
       <section className="py-20 bg-navy relative overflow-hidden">
         <div className="container mx-auto px-6">
           <motion.div
