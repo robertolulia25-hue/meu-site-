@@ -327,17 +327,17 @@ const DireitoMedico = () => {
                 {
                   number: "01",
                   title: "Reúna os documentos",
-                  text: "Reunir os documentos médicos e os registros relacionados ao atendimento, tratamento ou negativa.",
+                  text: "Reúna os documentos médicos e os registros relacionados ao atendimento, tratamento ou negativa.",
                 },
                 {
                   number: "02",
                   title: "Registre o que foi solicitado",
-                  text: "Sempre que possível, guardar protocolos, e-mails, mensagens, negativas e demais registros que demonstrem a solicitação realizada.",
+                  text: "Guarde protocolos, e-mails, mensagens, negativas e demais registros que mostrem a solicitação realizada, sempre que possível.",
                 },
                 {
                   number: "03",
                   title: "Verifique a resposta apresentada",
-                  text: "Analisar o que foi informado pelo plano de saúde, hospital, médico ou serviço público e se a resposta corresponde ao que foi solicitado.",
+                  text: "Analise o que foi informado pelo plano de saúde, hospital, médico ou serviço público e verifique se a resposta corresponde ao que foi solicitado.",
                 },
                 {
                   number: "04",
