@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
-import { AlertCircle, CheckCircle2 } from "lucide-react";
+import { useNavigate, Link } from "react-router-dom";
+import { AlertCircle, CheckCircle2, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
