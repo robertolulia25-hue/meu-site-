@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
-import { AlertCircle, CheckCircle2 } from "lucide-react";
+import { useNavigate, Link } from "react-router-dom";
+import { AlertCircle, CheckCircle2, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -121,13 +121,36 @@ const DireitoConsumidor = () => {
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {problemas.map((p, i) => (
+            {/* Primeiro card — clicável */}
+            <Link
+              to="/direito-consumidor/produto-com-defeito"
+              className="group bg-gradient-card p-7 rounded-sm border border-border/50 hover:border-gold/50 transition-all duration-500 hover:shadow-gold block cursor-pointer hover:-translate-y-1"
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-sm bg-gold/10 flex items-center justify-center shrink-0 group-hover:bg-gold/20 transition-colors duration-300 relative">
+                  <AlertCircle className="w-5 h-5 text-gold" strokeWidth={1.5} />
+                  <ArrowRight className="w-3 h-3 text-gold/60 absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-x-4 translate-y-4" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-lg text-foreground mb-2 group-hover:text-gold transition-colors duration-300">
+                    {problemas[0].title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">{problemas[0].description}</p>
+                  <p className="text-gold text-xs mt-4 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Saiba mais <ArrowRight className="w-3 h-3" />
+                  </p>
+                </div>
+              </div>
+            </Link>
+
+            {/* Demais cards */}
+            {problemas.slice(1).map((p, i) => (
               <motion.div
                 key={p.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
+                transition={{ duration: 0.5, delay: (i + 1) * 0.08 }}
                 className="group bg-gradient-card p-7 rounded-sm border border-border/50 hover:border-gold/30 transition-all duration-500 hover:shadow-gold"
               >
                 <div className="flex items-start gap-4">
