@@ -1,12 +1,42 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+interface NavigationState {
+  section?: string;
+}
+
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const { pathname, state } = useLocation();
+  const section = (state as NavigationState | null)?.section;
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    const scrollToSection = (sectionId: string, attempts = 0) => {
+      const element = document.querySelector(`#${sectionId}`) as HTMLElement | null;
+      if (element) {
+        const originalScrollBehavior = document.documentElement.style.scrollBehavior;
+        document.documentElement.style.scrollBehavior = "auto";
+        window.scrollTo(0, element.offsetTop);
+        document.documentElement.style.scrollBehavior = originalScrollBehavior;
+        return;
+      }
+      if (attempts < 50) {
+        requestAnimationFrame(() => scrollToSection(sectionId, attempts + 1));
+      }
+    };
+
+    if (section) {
+      scrollToSection(section);
+    } else {
+      const originalScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = "auto";
+      window.scrollTo(0, 0);
+      document.documentElement.style.scrollBehavior = originalScrollBehavior;
+    }
+  }, [pathname, section]);
 
   return null;
 };
