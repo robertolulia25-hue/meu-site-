@@ -142,22 +142,25 @@ const ProdutoComDefeito = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed text-justify">
               <p>
-                Quando um produto apresenta um problema que o torna impróprio ou inadequado para o uso a que se destina, ou que diminui o seu valor, o consumidor pode exigir que o vício seja solucionado. A responsabilidade, em regra, alcança os fornecedores envolvidos na relação de consumo.
+                Quando um produto apresenta um problema que o torna impróprio, inadequado para o uso a que se destina ou que diminui o seu valor, o consumidor pode exigir que o fornecedor corrija o vício. Esse direito existe em relação aos fornecedores envolvidos na venda, de forma direta ou indireta.
               </p>
               <p>
-                Se o problema não for solucionado no prazo máximo de 30 dias, o consumidor pode, conforme as circunstâncias do caso, escolher entre a substituição do produto por outro da mesma espécie e em perfeitas condições de uso, a restituição do valor pago ou o abatimento proporcional do preço.
+                Como regra geral, o fornecedor tem o prazo de 30 dias para resolver o problema. Se o vício não for sanado nesse prazo, o consumidor pode, conforme as circunstâncias do caso, optar por uma das alternativas previstas na legislação: receber a substituição do produto por outro da mesma espécie e em perfeitas condições de uso, obter a restituição da quantia paga ou conseguir o abatimento proporcional do preço.
               </p>
               <p>
-                Há situações que exigem uma análise específica. A própria legislação prevê, por exemplo, hipóteses em que o consumidor pode utilizar imediatamente essas alternativas, considerando a extensão do vício ou quando se tratar de produto essencial.
+                Há situações especiais em que essas alternativas podem ser utilizadas de forma imediata, sem a necessidade de esperar os 30 dias. Isso ocorre, por exemplo, quando o vício é muito extenso ou quando se trata de produto considerado essencial para o consumidor. A análise de cada caso permite identificar se alguma dessas hipóteses se aplica.
               </p>
               <p className="font-serif text-xl text-foreground text-center py-4">
-                O prazo para reclamar também importa.
+                O prazo para reclamar do vício também importa.
               </p>
               <p>
-                Nos casos de vícios aparentes ou de fácil constatação, o CDC estabelece prazo de 30 dias para produtos não duráveis e de 90 dias para produtos duráveis. Quando se trata de vício oculto, o prazo começa a ser contado a partir do momento em que o problema fica evidenciado.
+                A legislação estabelece prazos para que o consumidor reclame do vício do produto. Nos casos de vícios aparentes ou de fácil constatação, esse prazo é de 30 dias para produtos não duráveis e de 90 dias para produtos duráveis. Quando se trata de vício oculto, o prazo começa a ser contado a partir do momento em que o problema fica evidenciado.
               </p>
               <p>
-                Por isso, não basta saber que o produto apresentou um problema. É necessário analisar quando ele foi adquirido, qual é a natureza do vício, quando o problema apareceu, quais providências já foram tomadas e quais documentos comprovam a situação.
+                Esses prazos se referem ao momento de reclamar do vício perante o fornecedor, não ao prazo geral para ajuizar uma ação judicial. Por isso, quanto antes o problema for comunicado e documentado, mais segura será a defesa dos direitos do consumidor.
+              </p>
+              <p>
+                Não basta, portanto, saber que o produto apresentou um problema. É necessário analisar quando ele foi adquirido, qual é a natureza do vício, quando o problema apareceu, quais providências já foram tomadas e quais documentos comprovam a situação.
               </p>
             </div>
           </motion.div>
