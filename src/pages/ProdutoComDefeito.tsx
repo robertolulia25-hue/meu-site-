@@ -340,7 +340,7 @@ const ProdutoComDefeito = () => {
               Seu caso pode ter características específicas
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-10">
-              Cada situação deve ser analisada individualmente. Se você está enfrentando um problema com um produto adquirido, podemos avaliar os fatos e os documentos disponíveis para verificar quais possibilidades jurídicas podem ser consideradas.
+              Cada situação deve ser analisada individualmente. Se você já tentou resolver o problema e não conseguiu, envie uma breve descrição do que aconteceu e os documentos que possui. A partir dessas informações, podemos avaliar as circunstâncias do caso e as possibilidades jurídicas que podem ser consideradas.
             </p>
             <button
               onClick={() => navigate("/obrigado")}
@@ -348,6 +348,9 @@ const ProdutoComDefeito = () => {
             >
               Falar sobre meu caso
             </button>
+            <p className="mt-6 text-sm text-muted-foreground/80">
+              Você não precisa saber exatamente qual medida jurídica tomar. O primeiro passo é apresentar o problema e os documentos disponíveis.
+            </p>
           </motion.div>
         </div>
       </section>
