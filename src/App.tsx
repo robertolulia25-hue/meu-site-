@@ -9,6 +9,7 @@ import DireitoConsumidor from "./pages/DireitoConsumidor";
 import ProdutoComDefeito from "./pages/ProdutoComDefeito";
 import NotFound from "./pages/NotFound";
 import Analytics from "./components/Analytics";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
