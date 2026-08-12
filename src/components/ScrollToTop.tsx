@@ -16,10 +16,13 @@ const ScrollToTop = () => {
 
     const scrollToSection = (sectionId: string, attempts = 0) => {
       const element = document.querySelector(`#${sectionId}`) as HTMLElement | null;
+      console.log("[ScrollToTop] try", attempts, sectionId, element?.offsetTop);
       if (element) {
         const originalScrollBehavior = document.documentElement.style.scrollBehavior;
         document.documentElement.style.scrollBehavior = "auto";
+        console.log("[ScrollToTop] scrolling to", element.offsetTop);
         window.scrollTo(0, element.offsetTop);
+        console.log("[ScrollToTop] after scrollTo scrollY", window.scrollY);
         document.documentElement.style.scrollBehavior = originalScrollBehavior;
         return;
       }
