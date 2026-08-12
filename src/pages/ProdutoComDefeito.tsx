@@ -340,10 +340,10 @@ const ProdutoComDefeito = () => {
           >
             <div className="gold-line mb-6" />
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-              Seu caso pode ter características específicas
+              Entenda o que pode ser feito no seu caso
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-10">
-              Cada situação deve ser analisada individualmente. Se você já tentou resolver o problema e não conseguiu, envie uma breve descrição do que aconteceu e os documentos que possui. A partir dessas informações, podemos avaliar as circunstâncias do caso e as possibilidades jurídicas que podem ser consideradas.
+              Cada situação deve ser analisada individualmente. Se você já tentou resolver o problema e não conseguiu, envie uma breve descrição do que aconteceu e os documentos que possui. A partir dessas informações, podemos avaliar as circunstâncias do caso e identificar quais possibilidades jurídicas podem ser consideradas.
             </p>
             <button
               onClick={() => navigate("/obrigado")}
