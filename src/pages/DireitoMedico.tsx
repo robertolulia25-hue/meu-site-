@@ -398,22 +398,22 @@ const DireitoMedico = () => {
                 {
                   number: "01",
                   title: "Registrar a tentativa de solução",
-                  text: "Documentar as tentativas de resolução, os canais utilizados, as respostas recebidas e os prazos envolvidos ajuda a compreender a evolução do caso.",
+                  text: "Documente as tentativas de resolução, os canais utilizados, as respostas recebidas e os prazos envolvidos. Isso ajuda a compreender a evolução do caso.",
                 },
                 {
                   number: "02",
                   title: "Reunir a documentação médica e administrativa",
-                  text: "Organizar laudos, prontuários, negativas, protocolos, contratos, mensagens e comprovantes que demonstrem a situação e as tentativas de solução.",
+                  text: "Organize laudos, prontuários, negativas, protocolos, contratos, mensagens e comprovantes que demonstrem a situação e as tentativas de solução.",
                 },
                 {
                   number: "03",
                   title: "Avaliar os direitos envolvidos",
-                  text: "A partir dos documentos e dos fatos, é possível identificar quais regras contratuais, legais ou regulamentares podem ser aplicáveis ao caso.",
+                  text: "A partir dos documentos e dos fatos, é possível identificar as regras contratuais, legais ou regulamentares que podem ser aplicáveis ao caso.",
                 },
                 {
                   number: "04",
                   title: "Definir o caminho mais adequado",
-                  text: "Nem toda situação necessariamente exige ação judicial. Em alguns casos, uma solução administrativa pode ser suficiente. Em outros, diante da urgência, da resistência do fornecedor ou das características do caso, pode ser adequado avaliar uma medida jurídica.",
+                  text: "Nem toda situação exige necessariamente uma ação judicial. Em alguns casos, uma solução administrativa pode ser suficiente. Em outros, diante da urgência, da resistência do fornecedor ou das características do caso, pode ser adequado avaliar uma medida jurídica.",
                 },
               ].map((step, i) => (
                 <motion.div
