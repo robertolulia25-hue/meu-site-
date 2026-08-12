@@ -126,6 +126,45 @@ const ProdutoComDefeito = () => {
         </div>
       </section>
 
+      {/* Quais são os direitos do consumidor */}
+      <section className="py-24 bg-navy relative overflow-hidden">
+        <div className="container mx-auto px-6">
+          <motion.div
+            className="max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="gold-line mb-6" />
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8 text-center">
+              Quais são os direitos do consumidor quando o produto apresenta defeito?
+            </h2>
+            <div className="space-y-6 text-muted-foreground leading-relaxed">
+              <p>
+                Quando um produto apresenta um problema que o torna impróprio ou inadequado para o uso a que se destina, ou que diminui o seu valor, o consumidor pode exigir que o vício seja solucionado. A responsabilidade, em regra, alcança os fornecedores envolvidos na relação de consumo.
+              </p>
+              <p>
+                Se o problema não for solucionado no prazo máximo de 30 dias, o consumidor pode, conforme as circunstâncias do caso, escolher entre a substituição do produto por outro da mesma espécie e em perfeitas condições de uso, a restituição do valor pago ou o abatimento proporcional do preço.
+              </p>
+              <p>
+                Há situações que exigem uma análise específica. A própria legislação prevê, por exemplo, hipóteses em que o consumidor pode utilizar imediatamente essas alternativas, considerando a extensão do vício ou quando se tratar de produto essencial.
+              </p>
+              <p className="font-serif text-xl text-foreground text-center py-4">
+                O prazo para reclamar também importa.
+              </p>
+              <p>
+                Nos casos de vícios aparentes ou de fácil constatação, o CDC estabelece prazo de 30 dias para produtos não duráveis e de 90 dias para produtos duráveis. Quando se trata de vício oculto, o prazo começa a ser contado a partir do momento em que o problema fica evidenciado.
+              </p>
+              <p>
+                Por isso, não basta saber que o produto apresentou um problema. É necessário analisar quando ele foi adquirido, qual é a natureza do vício, quando o problema apareceu, quais providências já foram tomadas e quais documentos comprovam a situação.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+
       {/* Chamada para contato */}
       <section className="py-20 bg-navy relative overflow-hidden">
         <div className="container mx-auto px-6">
