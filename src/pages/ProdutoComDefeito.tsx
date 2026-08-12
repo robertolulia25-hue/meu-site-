@@ -326,8 +326,6 @@ const ProdutoComDefeito = () => {
       </section>
 
 
-
-
       <section className="py-20 bg-navy relative overflow-hidden">
         <div className="container mx-auto px-6">
           <motion.div
