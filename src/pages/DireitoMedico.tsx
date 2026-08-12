@@ -55,19 +55,19 @@ const analiseItems = [
     icon: Stethoscope,
     title: "O que aconteceu e qual tratamento foi indicado?",
     description:
-      "É importante compreender o diagnóstico, o tratamento indicado, a urgência da situação e o que efetivamente aconteceu durante o atendimento ou na tentativa de obter o tratamento.",
+      "É importante compreender o diagnóstico, o tratamento indicado, a urgência da situação e o que aconteceu durante o atendimento ou na tentativa de obter o tratamento.",
   },
   {
     icon: FileText,
     title: "O que o médico, hospital, plano de saúde ou serviço público informou?",
     description:
-      "Negativas, justificativas, protocolos, mensagens, relatórios e demais registros ajudam a demonstrar o que foi solicitado e qual resposta foi apresentada.",
+      "Negativas, justificativas, protocolos, mensagens, relatórios e demais registros ajudam a mostrar o que foi solicitado e qual resposta foi apresentada.",
   },
   {
     icon: Building2,
     title: "Quais documentos comprovam a situação?",
     description:
-      "Relatórios médicos, pedidos de exames ou tratamentos, receitas, prontuários, negativas, protocolos, contratos, carteirinhas, comprovantes e demais documentos podem ser relevantes para a análise.",
+      "Relatórios médicos, pedidos de exames ou tratamentos, receitas, prontuários, negativas, protocolos, contratos, carteirinhas e comprovantes podem ser relevantes para a análise.",
   },
 ];
 
