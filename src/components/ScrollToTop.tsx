@@ -16,14 +16,8 @@ const ScrollToTop = () => {
 
     const scrollToSection = (sectionId: string, attempts = 0) => {
       const element = document.querySelector(`#${sectionId}`) as HTMLElement | null;
-      console.log("[ScrollToTop] try", attempts, sectionId, element?.offsetTop);
       if (element) {
-        const originalScrollBehavior = document.documentElement.style.scrollBehavior;
-        document.documentElement.style.scrollBehavior = "auto";
-        console.log("[ScrollToTop] scrolling to", element.offsetTop);
-        window.scrollTo(0, element.offsetTop);
-        console.log("[ScrollToTop] after scrollTo scrollY", window.scrollY);
-        document.documentElement.style.scrollBehavior = originalScrollBehavior;
+        window.scrollTo({ top: element.offsetTop, behavior: "auto" });
         return;
       }
       if (attempts < 50) {
@@ -34,10 +28,7 @@ const ScrollToTop = () => {
     if (section) {
       scrollToSection(section);
     } else {
-      const originalScrollBehavior = document.documentElement.style.scrollBehavior;
-      document.documentElement.style.scrollBehavior = "auto";
-      window.scrollTo(0, 0);
-      document.documentElement.style.scrollBehavior = originalScrollBehavior;
+      window.scrollTo({ top: 0, behavior: "auto" });
     }
   }, [pathname, section]);
 
