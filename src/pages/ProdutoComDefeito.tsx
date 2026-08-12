@@ -73,7 +73,7 @@ const ProdutoComDefeito = () => {
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
               O que fazer quando um produto apresenta defeito?
             </h2>
-            <div className="space-y-5 text-muted-foreground leading-relaxed">
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-justify">
               <p>
                 Quando um produto apresenta defeito, é importante primeiro compreender o problema e verificar as circunstâncias da compra. A análise da situação, dos documentos disponíveis e das tentativas de solução realizadas com o fornecedor permite identificar quais direitos podem estar envolvidos e quais caminhos podem ser considerados.
               </p>
@@ -140,7 +140,7 @@ const ProdutoComDefeito = () => {
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-8 text-center">
               Quais são os direitos do consumidor quando o produto apresenta defeito?
             </h2>
-            <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <div className="space-y-6 text-muted-foreground leading-relaxed text-justify">
               <p>
                 Quando um produto apresenta um problema que o torna impróprio ou inadequado para o uso a que se destina, ou que diminui o seu valor, o consumidor pode exigir que o vício seja solucionado. A responsabilidade, em regra, alcança os fornecedores envolvidos na relação de consumo.
               </p>
