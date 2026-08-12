@@ -8,7 +8,9 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 const problemas = [
   {
     title: "Comprou um produto e ele apresentou defeito?",
-    description: "A empresa deve resolver situações como vício ou defeito, de acordo com as regras que protegem o consumidor.",
+    description: `Quando um produto apresenta defeito, o consumidor pode ter direito ao reparo, à substituição do produto, ao abatimento do preço ou, em determinadas situações, à devolução do valor pago. É importante analisar o problema, a data da compra, os documentos e as tentativas de solução realizadas com o fornecedor.
+
+A análise do caso permite verificar quais direitos podem ser exercidos e qual é a medida mais adequada para buscar uma solução.`,
   },
   {
     title: "Contratou um serviço e a empresa não resolveu o problema?",
@@ -136,7 +138,7 @@ const DireitoConsumidor = () => {
                     <h3 className="font-serif text-lg text-foreground mb-2 group-hover:text-gold transition-colors duration-300">
                       {p.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{p.description}</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">{p.description}</p>
                   </div>
                 </div>
               </motion.div>
