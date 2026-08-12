@@ -19,7 +19,8 @@ const services = [
   {
     icon: FileText,
     title: "Direito Médico",
-    description: "Atuação em cobertura de medicamentos, revisão de cláusulas contratuais, cobertura de tratamentos e home care junto a planos de saúde."
+    description: "Atuação em cobertura de medicamentos, revisão de cláusulas contratuais, cobertura de tratamentos e home care junto a planos de saúde.",
+    href: "/direito-medico"
   },
   {
     icon: Users,
