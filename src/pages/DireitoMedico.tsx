@@ -11,42 +11,42 @@ const problemas = [
     number: "01",
     title: "Seu plano de saúde negou um tratamento, exame ou cirurgia?",
     description:
-      "Uma negativa de cobertura pode exigir a análise do contrato, da indicação médica, da justificativa apresentada pela operadora e das circunstâncias do caso.",
+      "A negativa de cobertura deve ser analisada a partir do contrato, da indicação médica, da justificativa apresentada pela operadora e das circunstâncias do caso.",
   },
   {
     icon: AlertCircle,
     number: "02",
     title: "Seu tratamento foi interrompido ou a cobertura foi cancelada?",
     description:
-      "A interrupção de um tratamento ou da cobertura pode gerar consequências importantes e precisa ser analisada de acordo com o contrato, o tratamento em andamento e as circunstâncias do caso.",
+      "A interrupção do tratamento ou da cobertura pode ter consequências importantes e precisa ser analisada de acordo com o contrato, o tratamento em andamento e as circunstâncias do caso.",
   },
   {
     icon: Pill,
     number: "03",
     title: "Você precisa de um medicamento ou tratamento de alto custo?",
     description:
-      "Quando um tratamento necessário não está sendo disponibilizado, é importante reunir a indicação médica, os documentos clínicos e as informações sobre a negativa ou impossibilidade de acesso.",
+      "Quando um tratamento necessário não é disponibilizado, é importante reunir a indicação médica, os documentos clínicos e as informações sobre a negativa ou a impossibilidade de acesso.",
   },
   {
     icon: Building2,
     number: "04",
     title: "O SUS negou ou não disponibilizou um tratamento de que você precisa?",
     description:
-      "A necessidade de tratamento pode exigir a análise dos documentos médicos, da indicação clínica e das providências já adotadas perante o serviço público de saúde.",
+      "A falta de disponibilização do tratamento pode exigir a análise dos documentos médicos, da indicação clínica e das providências já adotadas perante o serviço público de saúde.",
   },
   {
     icon: Stethoscope,
     number: "05",
     title: "Você teve um problema com atendimento médico ou hospitalar?",
     description:
-      "Falhas no atendimento, complicações ou acontecimentos relacionados à assistência médica precisam ser analisados a partir dos fatos, prontuários, documentos e circunstâncias concretas do caso.",
+      "Falhas no atendimento, complicações ou outros acontecimentos relacionados à assistência médica devem ser analisados a partir dos fatos, prontuários, documentos e circunstâncias concretas do caso.",
   },
   {
     icon: FileText,
     number: "06",
     title: "Você acredita que houve uma falha na prestação do serviço de saúde?",
     description:
-      "Situações envolvendo possível erro ou falha na assistência médica exigem análise cuidadosa dos fatos, documentos médicos, histórico do atendimento e demais elementos disponíveis.",
+      "Situações que envolvam possível erro ou falha na assistência médica exigem uma análise cuidadosa dos fatos, documentos médicos, histórico do atendimento e demais elementos disponíveis.",
   },
 ];
 
