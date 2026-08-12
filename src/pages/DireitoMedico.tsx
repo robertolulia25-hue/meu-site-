@@ -74,7 +74,7 @@ const analiseItems = [
 const documentosItems = [
   {
     title: "Documentos médicos",
-    text: "Relatórios, laudos, receitas, pedidos de exames, indicação de tratamento, prontuários e documentos relacionados ao atendimento.",
+    text: "Relatórios, laudos, receitas, pedidos de exames, indicação de tratamento, prontuários e demais documentos relacionados ao atendimento.",
   },
   {
     title: "Documentos do plano de saúde",
