@@ -52,7 +52,7 @@ const AboutSection = () => {
               Sobre <span className="text-gradient-gold">Roberto Lima</span>
             </h2>
 
-            <div className="space-y-5 text-muted-foreground leading-relaxed">
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-justify">
               <p>
                 Com mais de 15 anos de experiência na advocacia, construí minha trajetória profissional atuando em demandas cíveis e de consumo e em casos que exigem análise cuidadosa dos fatos, dos documentos e das alternativas jurídicas disponíveis.
               </p>
@@ -65,7 +65,7 @@ const AboutSection = () => {
                 Meu trabalho é pautado pela análise individual de cada situação, pela comunicação clara com o cliente e pela busca de soluções jurídicas responsáveis, construídas de acordo com as características e necessidades de cada caso.
               </p>
 
-              <p className="font-serif-elegant text-lg italic text-gold/80 border-l-2 border-gold/30 pl-4 mt-8">
+              <p className="font-serif-elegant text-lg italic text-gold/80 border-l-2 border-gold/30 pl-4 mt-8 text-left">
                 "Cada caso é único e merece atenção individual, aliando conhecimento técnico, estratégia e sensibilidade humana."
               </p>
             </div>
