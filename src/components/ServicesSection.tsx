@@ -26,7 +26,8 @@ const services = [
   {
     icon: Users,
     title: "Direito Digital",
-    description: "Indenização por comentários ofensivos, desbloqueio e recuperação de contas em redes sociais e e-mails, proteção de dados (LGPD), contratos eletrônicos e assinaturas digitais."
+    description: "Indenização por comentários ofensivos, desbloqueio e recuperação de contas em redes sociais e e-mails, proteção de dados (LGPD), contratos eletrônicos e assinaturas digitais.",
+    href: "/direito-digital"
   },
   {
     icon: Scroll,
