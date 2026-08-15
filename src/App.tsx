@@ -8,6 +8,7 @@ import Obrigado from "./pages/Obrigado";
 import DireitoConsumidor from "./pages/DireitoConsumidor";
 import ProdutoComDefeito from "./pages/ProdutoComDefeito";
 import DireitoMedico from "./pages/DireitoMedico";
+import DireitoBancario from "./pages/DireitoBancario";
 import NotFound from "./pages/NotFound";
 import Analytics from "./components/Analytics";
 import ScrollToTop from "./components/ScrollToTop";
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/direito-consumidor" element={<DireitoConsumidor />} />
           <Route path="/direito-consumidor/produto-com-defeito" element={<ProdutoComDefeito />} />
           <Route path="/direito-medico" element={<DireitoMedico />} />
+          <Route path="/direito-bancario" element={<DireitoBancario />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
