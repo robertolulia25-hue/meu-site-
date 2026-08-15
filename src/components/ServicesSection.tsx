@@ -14,7 +14,8 @@ const services = [
   {
     icon: Building2,
     title: "Direito Bancário",
-    description: "Revisão de contratos, cobranças indevidas, renegociação de dívidas e defesa contra práticas abusivas de instituições financeiras."
+    description: "Revisão de contratos, cobranças indevidas, renegociação de dívidas e defesa contra práticas abusivas de instituições financeiras.",
+    href: "/direito-bancario"
   },
   {
     icon: FileText,
