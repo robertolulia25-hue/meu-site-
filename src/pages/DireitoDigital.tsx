@@ -6,7 +6,7 @@ import {
   UserRoundSearch,
   ShieldAlert,
   MessageSquareWarning,
-  DatabaseLock,
+  DatabaseZap,
   FileSignature,
   Search,
   FolderCheck,
@@ -59,7 +59,7 @@ const problemas = [
       "Manifestações publicadas em ambientes digitais que possam atingir a honra, imagem ou reputação, sempre mediante análise do conteúdo e do contexto.",
   },
   {
-    icon: DatabaseLock,
+    icon: DatabaseZap,
     number: "05",
     title: "Proteção de dados e LGPD",
     description:
