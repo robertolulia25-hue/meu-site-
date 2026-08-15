@@ -29,7 +29,7 @@ const AboutSection = () => {
               {/* Image container */}
               <div className="relative overflow-hidden rounded-sm shadow-elegant">
                 <img 
-                  src={retrato} 
+                  src={retratoAsset.url} 
                   alt="Dr. Roberto Lima"
                   className="w-full h-auto object-cover aspect-[3/4]"
                 />
