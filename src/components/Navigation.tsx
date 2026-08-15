@@ -54,9 +54,13 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           {/* Logo text */}
-          <motion.a 
-            href="#"
-            className="font-serif text-xl text-foreground hover:text-gold transition-colors duration-300"
+          <motion.a
+            href="#sobre"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#sobre");
+            }}
+            className="font-serif text-xl text-foreground hover:text-gold transition-colors duration-300 cursor-pointer"
             whileHover={{ scale: 1.02 }}
           >
             Roberto Lima
