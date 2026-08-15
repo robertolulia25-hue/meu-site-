@@ -165,15 +165,58 @@ const DireitoBancario = () => {
     const previousTitle = document.title;
     document.title = PAGE_TITLE;
 
-    setMeta(
-      'meta[name="description"]',
-      () => Object.assign(document.createElement("meta"), { name: "description" }),
-      (el) => el.setAttribute("content", PAGE_DESCRIPTION)
-    );
-    setMeta(
+    // Tags cujo valor original é restaurado ao sair da rota
+    const managed: { el: Element; attr: string; previous: string | null }[] = [];
+
+    const applyTag = (
+      selector: string,
+      create: () => HTMLElement,
+      attr: string,
+      value: string
+    ) => {
+      const el = setMeta(selector, create, (node) => {
+        managed.push({ el: node, attr, previous: node.getAttribute(attr) });
+        node.setAttribute(attr, value);
+      });
+      return el;
+    };
+
+    const meta = (name: string, value: string) =>
+      applyTag(
+        `meta[name="${name}"]`,
+        () => Object.assign(document.createElement("meta"), { name }),
+        "content",
+        value
+      );
+
+    const ogMeta = (property: string, value: string) =>
+      applyTag(
+        `meta[property="${property}"]`,
+        () => {
+          const el = document.createElement("meta");
+          el.setAttribute("property", property);
+          return el;
+        },
+        "content",
+        value
+      );
+
+    meta("description", PAGE_DESCRIPTION);
+    meta("robots", "index, follow");
+    meta("twitter:card", "summary_large_image");
+    meta("twitter:title", PAGE_TITLE);
+    meta("twitter:description", PAGE_DESCRIPTION);
+
+    ogMeta("og:title", PAGE_TITLE);
+    ogMeta("og:description", PAGE_DESCRIPTION);
+    ogMeta("og:url", PAGE_URL);
+    ogMeta("og:type", "website");
+
+    applyTag(
       'link[rel="canonical"]',
       () => Object.assign(document.createElement("link"), { rel: "canonical" }),
-      (el) => el.setAttribute("href", PAGE_URL)
+      "href",
+      PAGE_URL
     );
 
     const ld = document.createElement("script");
@@ -191,9 +234,17 @@ const DireitoBancario = () => {
 
     return () => {
       document.title = previousTitle;
+      managed.forEach(({ el, attr, previous }) => {
+        if (previous === null) {
+          el.remove();
+        } else {
+          el.setAttribute(attr, previous);
+        }
+      });
       ld.remove();
     };
   }, []);
+
 
   return (
     <div className="min-h-screen bg-background">
