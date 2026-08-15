@@ -32,12 +32,14 @@ const services = [
   {
     icon: Scroll,
     title: "Separação e Inventário Extrajudicial",
-    description: "Procedimentos administrativos ágeis realizados em cartório, proporcionando economia de tempo e recursos."
+    description: "Procedimentos administrativos ágeis realizados em cartório, proporcionando economia de tempo e recursos.",
+    href: "/separacao-extrajudicial"
   },
   {
     icon: PenTool,
     title: "Elaboração de Contratos",
-    description: "Redação e análise de contratos empresariais e particulares, garantindo segurança jurídica às suas transações."
+    description: "Redação e análise de contratos empresariais e particulares, garantindo segurança jurídica às suas transações.",
+    href: "/elaboracao-de-contratos"
   }
 ];
 

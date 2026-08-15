@@ -10,6 +10,9 @@ import ProdutoComDefeito from "./pages/ProdutoComDefeito";
 import DireitoMedico from "./pages/DireitoMedico";
 import DireitoBancario from "./pages/DireitoBancario";
 import DireitoDigital from "./pages/DireitoDigital";
+import SeparacaoExtrajudicial from "./pages/SeparacaoExtrajudicial";
+import SeparacaoJudicial from "./pages/SeparacaoJudicial";
+import ElaboracaoDeContratos from "./pages/ElaboracaoDeContratos";
 import NotFound from "./pages/NotFound";
 import Analytics from "./components/Analytics";
 import ScrollToTop from "./components/ScrollToTop";
@@ -32,6 +35,9 @@ const App = () => (
           <Route path="/direito-medico" element={<DireitoMedico />} />
           <Route path="/direito-bancario" element={<DireitoBancario />} />
           <Route path="/direito-digital" element={<DireitoDigital />} />
+          <Route path="/separacao-extrajudicial" element={<SeparacaoExtrajudicial />} />
+          <Route path="/separacao-judicial" element={<SeparacaoJudicial />} />
+          <Route path="/elaboracao-de-contratos" element={<ElaboracaoDeContratos />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
