@@ -22,10 +22,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const PAGE_TITLE = "Direito Bancário | Fraudes, PIX e Problemas com Bancos";
+const PAGE_TITLE = "Direito Bancário | Fraudes, PIX e Problemas com Bancos — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Atuação jurídica em fraudes bancárias, PIX não reconhecido, empréstimos não contratados, transações indevidas e outros problemas com bancos. Analise seu caso.";
+  "Atuação jurídica em casos de fraudes bancárias, PIX não reconhecido, empréstimos não contratados, cobranças indevidas e problemas com instituições financeiras.";
 const PAGE_URL = "https://www.robertolimajuridico.com.br/direito-bancario";
+const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre um problema bancário.";
 
 const problemas = [
   {
@@ -164,15 +165,58 @@ const DireitoBancario = () => {
     const previousTitle = document.title;
     document.title = PAGE_TITLE;
 
-    setMeta(
-      'meta[name="description"]',
-      () => Object.assign(document.createElement("meta"), { name: "description" }),
-      (el) => el.setAttribute("content", PAGE_DESCRIPTION)
-    );
-    setMeta(
+    // Tags cujo valor original é restaurado ao sair da rota
+    const managed: { el: Element; attr: string; previous: string | null }[] = [];
+
+    const applyTag = (
+      selector: string,
+      create: () => HTMLElement,
+      attr: string,
+      value: string
+    ) => {
+      const el = setMeta(selector, create, (node) => {
+        managed.push({ el: node, attr, previous: node.getAttribute(attr) });
+        node.setAttribute(attr, value);
+      });
+      return el;
+    };
+
+    const meta = (name: string, value: string) =>
+      applyTag(
+        `meta[name="${name}"]`,
+        () => Object.assign(document.createElement("meta"), { name }),
+        "content",
+        value
+      );
+
+    const ogMeta = (property: string, value: string) =>
+      applyTag(
+        `meta[property="${property}"]`,
+        () => {
+          const el = document.createElement("meta");
+          el.setAttribute("property", property);
+          return el;
+        },
+        "content",
+        value
+      );
+
+    meta("description", PAGE_DESCRIPTION);
+    meta("robots", "index, follow");
+    meta("twitter:card", "summary_large_image");
+    meta("twitter:title", PAGE_TITLE);
+    meta("twitter:description", PAGE_DESCRIPTION);
+
+    ogMeta("og:title", PAGE_TITLE);
+    ogMeta("og:description", PAGE_DESCRIPTION);
+    ogMeta("og:url", PAGE_URL);
+    ogMeta("og:type", "website");
+
+    applyTag(
       'link[rel="canonical"]',
       () => Object.assign(document.createElement("link"), { rel: "canonical" }),
-      (el) => el.setAttribute("href", PAGE_URL)
+      "href",
+      PAGE_URL
     );
 
     const ld = document.createElement("script");
@@ -190,9 +234,17 @@ const DireitoBancario = () => {
 
     return () => {
       document.title = previousTitle;
+      managed.forEach(({ el, attr, previous }) => {
+        if (previous === null) {
+          el.remove();
+        } else {
+          el.setAttribute(attr, previous);
+        }
+      });
       ld.remove();
     };
   }, []);
+
 
   return (
     <div className="min-h-screen bg-background">
@@ -220,7 +272,7 @@ const DireitoBancario = () => {
               Fraudes bancárias, PIX não reconhecido, empréstimos não contratados, transações indevidas e falhas de segurança podem causar prejuízos significativos. Quando o banco não soluciona o problema de forma adequada, é possível analisar a responsabilidade da instituição e as medidas jurídicas cabíveis para proteger seus direitos.
             </p>
             <button
-              onClick={() => navigate("/obrigado")}
+              onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
               className="px-10 py-4 bg-gradient-gold text-primary-foreground font-medium tracking-wider uppercase text-sm rounded-sm shadow-gold hover:shadow-lg transition-all duration-300"
             >
               Fale sobre seu caso
@@ -502,7 +554,7 @@ const DireitoBancario = () => {
               Fraudes, operações não reconhecidas e cobranças indevidas podem exigir uma análise jurídica cuidadosa. Entre em contato para apresentar seu caso e verificar as medidas que podem ser adotadas.
             </p>
             <button
-              onClick={() => navigate("/obrigado")}
+              onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
               className="px-10 py-4 bg-gradient-gold text-primary-foreground font-medium tracking-wider uppercase text-sm rounded-sm shadow-gold hover:shadow-lg transition-all duration-300"
             >
               Fale sobre seu caso
@@ -512,7 +564,7 @@ const DireitoBancario = () => {
       </section>
 
       <Footer />
-      <WhatsAppButton />
+      <WhatsAppButton message={WHATSAPP_MESSAGE} />
     </div>
   );
 };
