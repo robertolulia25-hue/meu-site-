@@ -22,10 +22,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const PAGE_TITLE = "Direito Bancário | Fraudes, PIX e Problemas com Bancos";
+const PAGE_TITLE = "Direito Bancário | Fraudes, PIX e Problemas com Bancos — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Atuação jurídica em fraudes bancárias, PIX não reconhecido, empréstimos não contratados, transações indevidas e outros problemas com bancos. Analise seu caso.";
+  "Atuação jurídica em casos de fraudes bancárias, PIX não reconhecido, empréstimos não contratados, cobranças indevidas e problemas com instituições financeiras.";
 const PAGE_URL = "https://www.robertolimajuridico.com.br/direito-bancario";
+const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre um problema bancário.";
 
 const problemas = [
   {
