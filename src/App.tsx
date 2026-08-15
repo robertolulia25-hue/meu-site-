@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
 import Obrigado from "./pages/Obrigado";
 import DireitoConsumidor from "./pages/DireitoConsumidor";
@@ -11,7 +11,7 @@ import DireitoMedico from "./pages/DireitoMedico";
 import DireitoBancario from "./pages/DireitoBancario";
 import DireitoDigital from "./pages/DireitoDigital";
 import SeparacaoExtrajudicial from "./pages/SeparacaoExtrajudicial";
-import SeparacaoJudicial from "./pages/SeparacaoJudicial";
+import DivorcioJudicial from "./pages/DivorcioJudicial";
 import ElaboracaoDeContratos from "./pages/ElaboracaoDeContratos";
 import NotFound from "./pages/NotFound";
 import Analytics from "./components/Analytics";
@@ -36,7 +36,8 @@ const App = () => (
           <Route path="/direito-bancario" element={<DireitoBancario />} />
           <Route path="/direito-digital" element={<DireitoDigital />} />
           <Route path="/separacao-extrajudicial" element={<SeparacaoExtrajudicial />} />
-          <Route path="/separacao-judicial" element={<SeparacaoJudicial />} />
+          <Route path="/divorcio-judicial" element={<DivorcioJudicial />} />
+          <Route path="/separacao-judicial" element={<Navigate to="/divorcio-judicial" replace />} />
           <Route path="/elaboracao-de-contratos" element={<ElaboracaoDeContratos />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

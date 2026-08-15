@@ -22,11 +22,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const PAGE_TITLE = "Separação Judicial | Orientação e Estratégia Jurídica — Roberto Lima";
+const PAGE_TITLE = "Divórcio Judicial | Orientação e Estratégia Jurídica — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Atuação jurídica em separação judicial. Análise individual do caso, definição de estratégia e acompanhamento processual em questões envolvendo filhos, bens e alimentos.";
-const PAGE_URL = "https://www.robertolimajuridico.com.br/separacao-judicial";
-const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre uma separação judicial.";
+  "Atuação jurídica em divórcio judicial. Análise individual do caso, definição de estratégia e acompanhamento processual em questões envolvendo filhos, guarda, alimentos e partilha de bens.";
+const PAGE_URL = "https://www.robertolimajuridico.com.br/divorcio-judicial";
+const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre um divórcio judicial.";
 
 const problemas = [
   {
@@ -34,7 +34,7 @@ const problemas = [
     number: "01",
     title: "Ausência de consenso entre os cônjuges",
     description:
-      "Situações em que há divergência sobre a separação, a guarda de filhos, a divisão de bens, alimentos ou outras questões que demandam uma decisão judicial.",
+      "Situações em que há divergência sobre o divórcio, a guarda dos filhos, a divisão de bens, os alimentos ou outras questões que precisam ser decididas pelo Judiciário.",
   },
   {
     icon: Baby,
@@ -62,7 +62,7 @@ const problemas = [
     number: "05",
     title: "Medidas urgentes e tutela",
     description:
-      "Situações que exigem providências imediatas, como regulamentação provisória de guarda, uso do imóvel familiar, susto de bens ou outras medidas de urgência.",
+      "Situações que exigem providências imediatas, como definição provisória de guarda e alimentos, uso do imóvel familiar ou proteção do patrimônio comum.",
   },
   {
     icon: FileText,
@@ -78,7 +78,7 @@ const blocosAnalise = [
     icon: Search,
     title: "Análise da situação concreta",
     description:
-      "Reconstrução dos fatos, identificação dos envolvidos, verificação do regime de bens, da situação dos filhos, dos bens e dívidas e das questões que precisam ser decididas judicialmente.",
+      "Compreensão dos fatos, verificação do regime de bens, da situação dos filhos, dos bens e dívidas do casal e das questões que precisam ser decididas judicialmente.",
   },
   {
     icon: FolderCheck,
@@ -98,7 +98,7 @@ const etapas = [
   {
     number: "01",
     title: "Entendimento do caso",
-    text: "Compreender a história do relacionamento, os pontos de conflito, as questões envolvendo filhos, bens e dívidas e as expectativas de cada cliente.",
+    text: "Compreender a história do relacionamento, os pontos de conflito, as questões envolvendo filhos, bens e dívidas e os objetivos do cliente.",
   },
   {
     number: "02",
@@ -119,32 +119,36 @@ const etapas = [
 
 const faq = [
   {
-    q: "Quando a separação precisa ser judicial?",
-    a: "A separação judicial é indicada quando não há acordo entre os cônjuges, quando existem filhos menores ou incapazes, quando há questões patrimoniais complexas ou quando se faz necessária uma decisão judicial sobre guarda, alimentos, visitas ou divisão de bens.",
+    q: "Quando o divórcio precisa ser judicial?",
+    a: "O divórcio é judicial quando não há acordo entre os cônjuges sobre o fim do casamento ou sobre pontos como guarda, convivência, alimentos e partilha, e também quando o caso exige decisão ou providência do Judiciário. Havendo consenso e preenchidos os requisitos legais, o divórcio pode ser feito em cartório.",
   },
   {
-    q: "Posso pedir separação judicial mesmo que meu cônjuge não queira?",
-    a: "Sim. A vontade de um dos cônjuges de não permanecer no casamento pode ser suficiente para ajuizar a ação. A existência ou a ausência de consenso influencia o tipo de procedimento e a forma de solução das questões pendentes.",
+    q: "Ainda existe separação judicial no Brasil?",
+    a: "Não. Atualmente o divórcio pode ser pedido diretamente, sem qualquer etapa prévia de separação. A separação judicial deixou de ser exigida como requisito e não é mais tratada como um procedimento autônomo, de modo que a ação adequada é a de divórcio.",
   },
   {
-    q: "Como é definida a guarda dos filhos?",
-    a: "A guarda é definida considerando o interesse superior da criança ou do adolescente, as condições de cada genitor, o vínculo afetivo, a situação financeira e as circunstâncias concretas do caso. Não existe uma regra única para todas as situações.",
+    q: "Posso pedir o divórcio mesmo que meu cônjuge não queira?",
+    a: "Sim. A vontade de um dos cônjuges de não permanecer casado é suficiente para pedir o divórcio. A existência ou não de consenso influencia o procedimento e a forma como as demais questões, como bens, guarda e alimentos, serão resolvidas.",
   },
   {
-    q: "Como funciona a partilha de bens na separação?",
-    a: "A partilha depende do regime de bens do casamento. Bens próprios e bens comuns são tratados de forma diferente, e a divisão pode ser feita por acordo ou por decisão judicial. Cada caso deve ser analisado individualmente.",
+    q: "E quando há filhos menores ou incapazes?",
+    a: "Havendo filhos menores ou incapazes, é preciso definir guarda, convivência e alimentos. Essas questões podem ser discutidas no próprio processo de divórcio ou já estar resolvidas judicialmente. Cada situação é avaliada de acordo com o interesse da criança ou do adolescente.",
+  },
+  {
+    q: "Como funciona a partilha de bens?",
+    a: "A partilha depende do regime de bens do casamento. Bens particulares e bens comuns recebem tratamento diferente, e a divisão pode ser feita por acordo ou por decisão judicial. É possível, ainda, divorciar-se e deixar a partilha para um momento posterior, conforme o caso.",
   },
   {
     q: "É possível pedir alimentos para o cônjuge?",
-    a: "Em determinadas situações, é possível pleitear alimentos para o cônjuge ou ex-cônjuge, especialmente quando há desequilíbrio econômico e necessidade comprovada. O cabimento e o valor devem ser analisados conforme as condições de cada caso.",
+    a: "Em determinadas situações, é possível pleitear alimentos ao ex-cônjuge, especialmente quando há desequilíbrio econômico e necessidade demonstrada. O cabimento e o valor dependem das condições concretas de cada parte.",
   },
   {
-    q: "Quanto tempo dura uma separação judicial?",
-    a: "A duração varia conforme a complexidade do caso, a existência de acordo, a necessidade de produção de provas e a movimentação do Judiciário. Não é possível garantir prazos específicos sem a análise prévia do caso.",
+    q: "Quanto tempo dura um divórcio judicial?",
+    a: "A duração varia conforme a complexidade do caso, a existência de acordo, a necessidade de provas e o andamento do Judiciário. Não é possível assegurar prazos sem a análise prévia da situação.",
   },
   {
-    q: "É possível tentar um acordo durante o processo judicial?",
-    a: "Sim. O acordo é sempre uma possibilidade a ser considerada, inclusive durante o processo judicial. O advogado pode auxiliar na negociação e na formalização de acordos que sejam justos e adequados aos interesses do cliente.",
+    q: "É possível fazer acordo durante o processo?",
+    a: "Sim. O acordo pode ser construído a qualquer momento, inclusive durante o processo judicial, e costuma abreviar a solução. O acompanhamento jurídico auxilia na negociação e na formalização adequada dos termos.",
   },
 ];
 
@@ -158,7 +162,7 @@ const setMeta = (selector: string, create: () => HTMLElement, apply: (el: Elemen
   return el;
 };
 
-const SeparacaoJudicial = () => {
+const DivorcioJudicial = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -264,10 +268,10 @@ const SeparacaoJudicial = () => {
           >
             <div className="gold-line mb-6" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Separação Judicial: atuação estratégica em casos que exigem decisão judicial
+              Divórcio Judicial: atuação estratégica em casos que exigem decisão judicial
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-8">
-              Quando a separação não pode ser resolvida extrajudicialmente, a via judicial permite que questões como guarda, alimentos, bens e dívidas sejam apreciadas pelo Judiciário. Cada caso é analisado individualmente e conduzido de acordo com suas particularidades.
+              Quando não há acordo ou quando o caso exige decisão do Judiciário, o divórcio judicial permite discutir guarda, convivência, alimentos, partilha de bens e medidas urgentes. Cada caso é analisado individualmente e conduzido conforme suas particularidades.
             </p>
             <button
               onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
@@ -294,7 +298,7 @@ const SeparacaoJudicial = () => {
               Há questões sem consenso envolvendo filhos, bens ou alimentos?
             </h2>
             <p className="text-muted-foreground leading-relaxed text-justify md:text-center">
-              A separação judicial é indicada quando existe divergência entre os cônjuges ou quando a lei exige intervenção do Judiciário. A estratégia processual é definida após a análise cuidadosa da situação concreta.
+              O divórcio judicial é o caminho indicado quando não há consenso entre os cônjuges ou quando o caso exige decisão do Judiciário. A estratégia processual é definida após a análise cuidadosa da situação concreta.
             </p>
           </motion.div>
         </div>
@@ -312,7 +316,7 @@ const SeparacaoJudicial = () => {
           >
             <div className="gold-line mb-6" />
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-              Situações que podem demandar separação judicial
+              Situações que podem demandar divórcio judicial
             </h2>
           </motion.div>
 
@@ -346,7 +350,7 @@ const SeparacaoJudicial = () => {
 
           <div className="max-w-3xl mx-auto mt-14 pt-8 border-t border-gold/20">
             <p className="font-serif-elegant text-lg md:text-xl text-foreground/90 text-center leading-relaxed">
-              A separação judicial é uma ferramenta legal para casos que não admitem solução extrajudicial. A definição da estratégia depende das circunstâncias concretas de cada família.
+              O divórcio judicial é o caminho para os casos que não admitem solução consensual em cartório. A definição da estratégia depende das circunstâncias concretas de cada família.
             </p>
           </div>
         </div>
@@ -368,7 +372,7 @@ const SeparacaoJudicial = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed text-justify">
               <p>
-                Cada separação judicial é única. A condução do caso depende da história do casamento, da situação dos filhos, do regime de bens, das dívidas, da renda de cada parte e de outras circunstâncias que só podem ser avaliadas após o estudo do caso.
+                Cada divórcio judicial é único. A condução do caso depende da história do casamento, da situação dos filhos, do regime de bens, das dívidas, da renda de cada parte e de outras circunstâncias que só podem ser avaliadas após o estudo do caso.
               </p>
               <p>
                 Não prometemos resultados, prazos ou decisões favoráveis. O trabalho consiste em analisar os fatos, organizar a documentação, identificar as questões jurídicas relevantes e construir uma estratégia adequada aos objetivos e à realidade de cada cliente.
@@ -412,7 +416,7 @@ const SeparacaoJudicial = () => {
               Como podemos ajudar
             </h2>
             <p className="text-muted-foreground leading-relaxed text-justify mb-12">
-              A separação judicial exige uma análise cuidadosa e uma estratégia adaptada a cada família. O primeiro passo é ouvir o cliente, compreender a situação e avaliar os documentos e as providências necessárias.
+              O divórcio judicial exige uma análise cuidadosa e uma estratégia adaptada a cada família. O primeiro passo é ouvir o cliente, compreender a situação e avaliar os documentos e as providências necessárias.
             </p>
 
             <div className="space-y-12">
@@ -459,10 +463,10 @@ const SeparacaoJudicial = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed text-justify">
               <p>
-                Em uma separação judicial, a organização da documentação e a definição clara dos objetivos podem fazer diferença na condução do processo. Provas, comprovantes e registros bem reunidos auxiliam na análise do caso e na instrução processual.
+                Em um divórcio judicial, a organização da documentação e a definição clara dos objetivos podem fazer diferença na condução do processo. Provas, comprovantes e registros bem reunidos auxiliam na análise do caso e na instrução processual.
               </p>
               <p>
-                Medidas urgentes, como a fixação provisória de alimentos, a regulamentação de guarda ou o uso do imóvel familiar, podem ser necessárias em determinadas situações. Quanto antes o caso for analisado, mais rapidamente essas providências podem ser avaliadas.
+                Medidas urgentes, como a fixação provisória de alimentos, a definição de guarda e convivência ou o uso do imóvel familiar, podem ser necessárias em determinadas situações. Quanto antes o caso for analisado, mais rapidamente essas providências podem ser avaliadas.
               </p>
               <p>
                 Adiar a busca por orientação jurídica pode dificultar a preservação de provas, a obtenção de medidas urgentes e a própria estruturação da estratégia processual.
@@ -470,7 +474,7 @@ const SeparacaoJudicial = () => {
             </div>
             <div className="mt-14 pt-8 border-t border-gold/20">
               <p className="font-serif-elegant text-lg md:text-xl text-foreground/90 text-center leading-relaxed">
-                Se você está diante de uma separação que exige solução judicial, organize os documentos disponíveis e procure orientação jurídica para analisar o caso.
+                Se você está diante de um divórcio que exige solução judicial, organize os documentos disponíveis e procure orientação jurídica para analisar o caso.
               </p>
             </div>
           </motion.div>
@@ -489,7 +493,7 @@ const SeparacaoJudicial = () => {
           >
             <div className="gold-line mb-6" />
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">
-              Perguntas frequentes sobre separação judicial
+              Perguntas frequentes sobre divórcio judicial
             </h2>
 
             <Accordion type="single" collapsible className="w-full">
@@ -546,7 +550,7 @@ const SeparacaoJudicial = () => {
           >
             <div className="gold-line mb-6" />
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-              Precisa de orientação sobre separação judicial?
+              Precisa de orientação sobre divórcio judicial?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-10">
               Questões envolvendo filhos, bens, alimentos e dívidas podem exigir uma análise jurídica cuidadosa. Entre em contato para apresentar sua situação e verificar as medidas que podem ser adotadas.
@@ -567,4 +571,4 @@ const SeparacaoJudicial = () => {
   );
 };
 
-export default SeparacaoJudicial;
+export default DivorcioJudicial;

@@ -31,8 +31,8 @@ const services = [
   },
   {
     icon: Scroll,
-    title: "Separação e Inventário Extrajudicial",
-    description: "Procedimentos administrativos ágeis realizados em cartório, proporcionando economia de tempo e recursos.",
+    title: "Separação de Fato e Inventário Extrajudicial",
+    description: "Declaração de separação de fato, inventário e demais procedimentos administrativos em cartório, com orientação sobre os próximos passos.",
     href: "/separacao-extrajudicial"
   },
   {

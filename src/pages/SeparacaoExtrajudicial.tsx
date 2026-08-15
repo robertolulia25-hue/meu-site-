@@ -22,54 +22,54 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const PAGE_TITLE = "Separação Extrajudicial | Cartório e Orientação Jurídica — Roberto Lima";
+const PAGE_TITLE = "Separação de Fato em Cartório | Declaração e Orientação Jurídica — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Orientação jurídica para separação extrajudicial em cartório. Análise de documentação, verificação de requisitos legais e acompanhamento da formalização do procedimento.";
+  "Orientação jurídica para a declaração de separação de fato em cartório: análise da documentação, verificação dos requisitos e acompanhamento da lavratura da escritura pública.";
 const PAGE_URL = "https://www.robertolimajuridico.com.br/separacao-extrajudicial";
-const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre uma separação extrajudicial.";
+const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre uma declaração de separação de fato em cartório.";
 
 const problemas = [
   {
     icon: Users,
     number: "01",
-    title: "Casal em acordo",
+    title: "Casal de acordo quanto ao fim da convivência",
     description:
-      "Situações em que ambos os cônjuges concordam com a separação e com as condições envolvidas, permitindo a realização do procedimento de forma administrativa em cartório.",
+      "Ambos reconhecem que a vida em comum terminou e desejam registrar isso formalmente, por escritura pública, sem litígio.",
   },
   {
     icon: HeartHandshake,
     number: "02",
-    title: "Consenso sobre questões patrimoniais",
+    title: "Definição da data da separação de fato",
     description:
-      "Casos em que há entendimento sobre a divisão de bens, divisão de dívidas e demais aspectos patrimoniais, conforme o regime de bens do casamento.",
+      "Registro da data em que cessou a comunhão plena de vida, elemento que pode ter reflexos patrimoniais e servir de referência para medidas futuras.",
   },
   {
     icon: Scale,
     number: "03",
-    title: "Ausência de filhos menores incapazes",
+    title: "Organização jurídica antes do divórcio",
     description:
-      "O procedimento extrajudicial pode ser utilizado quando não há filhos menores ou incapazes que precisem de regulamentação de guarda, alimentos ou visitas.",
+      "Casais que ainda não pretendem divorciar-se, mas querem delimitar formalmente o momento em que a convivência conjugal chegou ao fim.",
   },
   {
     icon: FileCheck,
     number: "04",
-    title: "Revisão de documentação necessária",
+    title: "Revisão da documentação necessária",
     description:
-      "Análise de certidão de casamento, documentos pessoais, comprovantes de renda, bens e dívidas para verificar se a documentação está adequada ao procedimento.",
+      "Análise de certidão de casamento, documentos pessoais e demais informações exigidas para a lavratura da escritura em cartório de notas.",
   },
   {
     icon: ScrollText,
     number: "05",
-    title: "Escritura pública de separação",
+    title: "Escritura pública declaratória",
     description:
-      "Acompanhamento na elaboração e na lavratura da escritura pública em cartório de registro de imóveis, com cláusulas que reflitam o acordo entre as partes.",
+      "Acompanhamento na redação e na lavratura da escritura, com atenção ao conteúdo próprio desse ato: a declaração de separação de fato consensual.",
   },
   {
     icon: PenTool,
     number: "06",
-    title: "Registro e formalização",
+    title: "Próximos passos: divórcio e demais medidas",
     description:
-      "Orientação quanto ao registro da escritura, comunicação ao cartório de registro civil e demais providências para a convalidação da separação.",
+      "Avaliação, conforme o caso, do divórcio consensual em cartório — inclusive havendo filhos menores, desde que guarda, convivência e alimentos já estejam definidos judicialmente — ou da via judicial.",
   },
 ];
 
@@ -78,19 +78,19 @@ const blocosAnalise = [
     icon: Search,
     title: "Análise da situação do casal",
     description:
-      "Verificação do tempo de casamento, regime de bens, existência de filhos e eventuais circunstâncias que possam afetar a viabilidade do procedimento extrajudicial.",
+      "Verificação do regime de bens, da existência de filhos, da data em que a convivência terminou e dos efeitos que o casal pretende alcançar.",
   },
   {
     icon: FolderCheck,
     title: "Organização da documentação",
     description:
-      "Reunião e análise de certidão de casamento atualizada, documentos de identidade, comprovantes de residência, dados sobre bens, dívidas e renda, conforme o caso.",
+      "Reunião e conferência de certidão de casamento atualizada, documentos de identidade, comprovantes de residência e informações patrimoniais relevantes.",
   },
   {
     icon: ShieldCheck,
     title: "Acompanhamento da formalização",
     description:
-      "Orientação na elaboração do instrumento particular, acompanhamento na lavratura da escritura pública e verificação dos registros necessários.",
+      "Orientação quanto ao conteúdo da escritura pública, acompanhamento da lavratura em cartório e das providências posteriores aplicáveis.",
   },
 ];
 
@@ -98,53 +98,53 @@ const etapas = [
   {
     number: "01",
     title: "Entendimento do caso",
-    text: "Reunião inicial para compreender a situação do casal, a existência de consenso, a presença de filhos menores e os principais pontos a serem tratados.",
+    text: "Conversa inicial para compreender a situação do casal, a existência de consenso, a data em que a convivência terminou e os objetivos de cada um.",
   },
   {
     number: "02",
-    title: "Verificação da viabilidade extrajudicial",
-    text: "Análise dos requisitos legais para a realização do procedimento em cartório, considerando o regime de bens, a existência de filhos e a documentação disponível.",
+    title: "Definição da medida adequada",
+    text: "Avaliação sobre o cabimento da declaração de separação de fato em cartório e sobre a necessidade de outras medidas, como divórcio, partilha ou questões relativas aos filhos.",
   },
   {
     number: "03",
-    title: "Organização dos documentos e do acordo",
-    text: "Orientação sobre a documentação necessária e a definição das cláusulas que devem constar no instrumento de separação.",
+    title: "Organização dos documentos e do conteúdo da escritura",
+    text: "Orientação sobre a documentação exigida e sobre o que deve constar da escritura pública, respeitando o objeto próprio desse ato.",
   },
   {
     number: "04",
-    title: "Acompanhamento da formalização em cartório",
-    text: "Acompanhamento na lavratura da escritura pública e na adoção das providências posteriores, como registros e comunicações oficiais.",
+    title: "Acompanhamento da lavratura em cartório",
+    text: "Acompanhamento da assinatura da escritura e das providências posteriores, com orientação sobre os próximos passos aplicáveis ao caso.",
   },
 ];
 
 const faq = [
   {
-    q: "O que é a separação extrajudicial?",
-    a: "A separação extrajudicial é um procedimento administrativo realizado em cartório de notas, mediante escritura pública, em casos que preencham os requisitos legais. Ela dispensa a necessidade de ação judicial quando há acordo entre os cônjuges e não há filhos menores ou incapazes.",
+    q: "O que é a declaração de separação de fato em cartório?",
+    a: "É um ato consensual, formalizado por escritura pública em cartório de notas, no qual os cônjuges declaram que a convivência conjugal chegou ao fim e indicam desde quando. Seu objeto é essa declaração, e não a dissolução do casamento.",
   },
   {
-    q: "Quais são os requisitos para fazer separação extrajudicial?",
-    a: "De forma geral, é necessário que ambos os cônjuges estejam de acordo com a separação, que não existam filhos menores ou incapazes e que haja consenso sobre as condições patrimoniais. A viabilidade deve ser confirmada após análise concreta da documentação e da situação do casal.",
+    q: "A separação de fato em cartório é o mesmo que divórcio?",
+    a: "Não. O casamento continua existindo até o divórcio. A escritura apenas registra formalmente que a comunhão plena de vida cessou, o que pode ser relevante como marco temporal para diversos efeitos.",
   },
   {
-    q: "Posso fazer separação extrajudicial se tivermos filhos?",
-    a: "A separação extrajudicial não é admitida quando há filhos menores em comum ou incapazes. Nessas situações, a regulamentação de guarda, alimentos e visitas geralmente exige intervenção judicial. Cada caso deve ser analisado individualmente.",
+    q: "A escritura resolve partilha, guarda ou alimentos?",
+    a: "Não. Essas questões têm tratamento próprio e não são solucionadas dentro da escritura de separação de fato. Elas podem ser objeto de acordo específico, de escritura de divórcio quando cabível, ou de decisão judicial.",
   },
   {
-    q: "É preciso resolver a divisão de bens antes do cartório?",
-    a: "Sim. Os cônjuges precisam estar de acordo sobre a partilha dos bens, a divisão de dívidas e eventuais questões patrimoniais. O advogado pode auxiliar na revisão e na organização desses pontos antes da lavratura da escritura.",
+    q: "Quem tem filhos menores pode usar a via de cartório?",
+    a: "A declaração de separação de fato tem objeto próprio e não depende da inexistência de filhos. Já o divórcio consensual em cartório é admitido mesmo havendo filhos menores ou incapazes, desde que guarda, convivência e alimentos já tenham sido definidos judicialmente. Cada caso deve ser analisado.",
   },
   {
-    q: "A separação extrajudicial tem o mesmo efeito da judicial?",
-    a: "Quando regularmente lavrada e registrada, a escritura pública de separação extrajudicial produz efeitos semelhantes à sentença judicial, embora o procedimento seja administrativo. É importante observar os requisitos legais e as formalidades exigidas.",
+    q: "Quais documentos costumam ser exigidos?",
+    a: "Em regra, certidão de casamento atualizada, documentos de identidade e comprovantes de residência dos cônjuges, além de informações sobre o regime de bens e o patrimônio, conforme a orientação do cartório.",
   },
   {
-    q: "Quanto tempo dura a separação extrajudicial?",
-    a: "O prazo pode variar conforme a organização da documentação, a disponibilidade do cartório e a complexidade do acordo. A análise prévia dos documentos costuma ajudar a reduzir contratempos e agilizar o processo.",
+    q: "Por que registrar a data da separação de fato?",
+    a: "A data em que a convivência terminou pode influenciar aspectos patrimoniais e servir de referência para medidas posteriores. Registrá-la por escritura confere segurança e evita discussões sobre esse marco.",
   },
   {
-    q: "Por que contar com um advogado na separação extrajudicial?",
-    a: "O advogado auxilia na verificação dos requisitos legais, na organização da documentação, na revisão das cláusulas do acordo e no acompanhamento das formalidades em cartório. A orientação técnica pode contribuir para que o procedimento seja conduzido de forma adequada.",
+    q: "Por que contar com um advogado?",
+    a: "O advogado ajuda a identificar a medida adequada ao caso, a organizar a documentação, a revisar o conteúdo da escritura e a planejar os próximos passos, como o divórcio e as questões patrimoniais ou relativas aos filhos.",
   },
 ];
 
@@ -264,10 +264,10 @@ const SeparacaoExtrajudicial = () => {
           >
             <div className="gold-line mb-6" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Separação Extrajudicial: orientação jurídica em cartório
+              Separação de Fato em Cartório: orientação jurídica para a declaração
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-8">
-              A separação extrajudicial pode ser realizada em cartório quando presentes os requisitos legais. O acompanhamento de um advogado auxilia na organização da documentação, na verificação da viabilidade do procedimento e na formalização do acordo entre os cônjuges.
+              Por escritura pública, o casal pode declarar que a convivência conjugal chegou ao fim, registrando formalmente a data da separação de fato. O acompanhamento jurídico auxilia na análise do caso, na organização dos documentos e na correta formalização em cartório.
             </p>
             <button
               onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
@@ -291,10 +291,10 @@ const SeparacaoExtrajudicial = () => {
             transition={{ duration: 0.7 }}
           >
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-              Estão de comum acordo e querem formalizar a separação de forma mais ágil?
+              Querem registrar formalmente que a vida em comum chegou ao fim?
             </h2>
             <p className="text-muted-foreground leading-relaxed text-justify md:text-center">
-              Em situações de consenso, a separação extrajudicial pode ser uma alternativa válida. A viabilidade depende da análise prévia da situação do casal, da existência de filhos menores e da documentação disponível.
+              A declaração de separação de fato é feita em cartório, de forma consensual, e tem objeto próprio: registrar que a comunhão plena de vida cessou e desde quando. Questões como partilha, guarda, convivência e alimentos são tratadas em medidas específicas, avaliadas conforme o caso.
             </p>
           </motion.div>
         </div>
@@ -312,7 +312,7 @@ const SeparacaoExtrajudicial = () => {
           >
             <div className="gold-line mb-6" />
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-              Em quais situações a separação extrajudicial pode ser indicada
+              Em quais situações a declaração de separação de fato pode ser indicada
             </h2>
           </motion.div>
 
@@ -346,7 +346,7 @@ const SeparacaoExtrajudicial = () => {
 
           <div className="max-w-3xl mx-auto mt-14 pt-8 border-t border-gold/20">
             <p className="font-serif-elegant text-lg md:text-xl text-foreground/90 text-center leading-relaxed">
-              A separação extrajudicial não se aplica a todos os casos. A análise prévia dos documentos e da situação do casal é indispensável para verificar se o procedimento é viável.
+              A declaração de separação de fato não substitui o divórcio nem resolve, por si só, partilha, guarda ou alimentos. A análise prévia do caso é indispensável para definir as medidas adequadas.
             </p>
           </div>
         </div>
@@ -368,10 +368,10 @@ const SeparacaoExtrajudicial = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed text-justify">
               <p>
-                Antes de optar pela separação extrajudicial, é importante verificar se todos os requisitos legais estão presentes. A existência de filhos menores, a ausência de consenso ou a necessidade de medidas urgentes pode indicar que o caminho mais adequado é a via judicial.
+                Antes da lavratura da escritura, verifica-se se há consenso entre os cônjuges quanto ao fim da convivência, qual a data da separação de fato e quais efeitos o casal pretende alcançar. Havendo filhos, as questões de guarda, convivência e alimentos têm tratamento próprio e devem ser avaliadas caso a caso.
               </p>
               <p>
-                A análise prévia também envolve a revisão da documentação do casal, do regime de bens, dos bens e dívidas a serem tratados e da capacidade dos cônjuges para comparecer ao cartório e formalizar o acordo.
+                A análise também envolve a revisão da documentação do casal, o regime de bens e os reflexos patrimoniais da data da separação de fato, além de avaliar se o caso comporta divórcio consensual em cartório ou exige a via judicial.
               </p>
             </div>
           </motion.div>
@@ -412,7 +412,7 @@ const SeparacaoExtrajudicial = () => {
               Como podemos ajudar
             </h2>
             <p className="text-muted-foreground leading-relaxed text-justify mb-12">
-              Cada separação exige uma análise própria. O primeiro passo é compreender a situação do casal, verificar a documentação disponível e avaliar se o procedimento extrajudicial é apropriado. A partir dessa análise, são definidas as providências mais adequadas.
+              Cada situação exige uma análise própria. O primeiro passo é compreender o contexto do casal, verificar a documentação disponível e avaliar qual caminho é apropriado: a declaração de separação de fato, o divórcio consensual em cartório ou a via judicial.
             </p>
 
             <div className="space-y-12">
@@ -459,18 +459,18 @@ const SeparacaoExtrajudicial = () => {
             </h2>
             <div className="space-y-6 text-muted-foreground leading-relaxed text-justify">
               <p>
-                A separação envolve questões pessoais, patrimoniais e, muitas vezes, emocionais. A organização prévia dos documentos e a definição clara dos pontos de acordo podem contribuir para um procedimento mais tranquilo e com menos contratempos.
+                O fim da convivência envolve questões pessoais, patrimoniais e, muitas vezes, emocionais. Registrar formalmente a data da separação de fato pode ser relevante para delimitar responsabilidades e reflexos patrimoniais a partir daquele momento.
               </p>
               <p>
-                Adiar a análise jurídica ou subestimar a importância da documentação pode gerar atrasos, custos adicionais e a necessidade de correções posteriores. Por isso, a orientação prévia é importante para identificar os requisitos e preparar o caso.
+                Adiar a análise jurídica ou subestimar a documentação pode gerar dúvidas sobre a data do fim da convivência, atrasos e a necessidade de correções posteriores. A orientação prévia ajuda a identificar os requisitos e preparar o caso.
               </p>
               <p>
-                Quanto mais completa for a documentação e quanto mais claro for o acordo, mais célere e segura tende a ser a formalização da separação em cartório.
+                Quanto mais completa for a documentação e mais claro for o consenso do casal, mais segura tende a ser a formalização em cartório.
               </p>
             </div>
             <div className="mt-14 pt-8 border-t border-gold/20">
               <p className="font-serif-elegant text-lg md:text-xl text-foreground/90 text-center leading-relaxed">
-                Se você está avaliando a possibilidade de uma separação extrajudicial, reúna os documentos disponíveis e procure orientação jurídica para verificar se o procedimento se aplica ao seu caso.
+                Se você pretende formalizar a separação de fato, reúna os documentos disponíveis e procure orientação jurídica para verificar qual medida se aplica ao seu caso.
               </p>
             </div>
           </motion.div>
@@ -489,7 +489,7 @@ const SeparacaoExtrajudicial = () => {
           >
             <div className="gold-line mb-6" />
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">
-              Perguntas frequentes sobre separação extrajudicial
+              Perguntas frequentes sobre separação de fato em cartório
             </h2>
 
             <Accordion type="single" collapsible className="w-full">
@@ -522,7 +522,7 @@ const SeparacaoExtrajudicial = () => {
               Atuação jurídica personalizada
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Cada caso é analisado individualmente, considerando a situação do casal, a documentação disponível e a viabilidade do procedimento extrajudicial. A orientação jurídica é conduzida de acordo com as características de cada situação.
+              Cada caso é analisado individualmente, considerando a situação do casal, a documentação disponível e as medidas cabíveis em cartório ou em juízo. A orientação jurídica é conduzida de acordo com as características de cada situação.
             </p>
             <button
               onClick={() => navigate("/", { state: { section: "sobre" } })}
@@ -546,10 +546,10 @@ const SeparacaoExtrajudicial = () => {
           >
             <div className="gold-line mb-6" />
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-              Pensa em separação extrajudicial?
+              Pensa em declarar a separação de fato?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-10">
-              A formalização da separação em cartório pode ser uma alternativa válida para casos que preencham os requisitos legais. Entre em contato para apresentar sua situação e verificar se o procedimento se aplica ao seu caso.
+              A declaração de separação de fato em cartório pode ser o primeiro passo para organizar juridicamente o fim da convivência. Entre em contato para apresentar sua situação e verificar as medidas adequadas.
             </p>
             <button
               onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
