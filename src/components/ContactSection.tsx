@@ -31,7 +31,7 @@ const ContactSection = () => {
             Entre em <span className="text-gradient-gold">Contato</span>
           </h2>
           <p className="font-serif-elegant text-xl text-muted-foreground max-w-2xl mx-auto">
-            Estou à disposição para atendê-lo. Agende sua consulta.
+            Estou à disposição para ouvir seu caso e avaliar como posso ajudá-lo.
           </p>
         </motion.div>
 
