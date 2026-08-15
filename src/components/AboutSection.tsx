@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import retrato from "@/assets/retrato.png";
+import retratoAsset from "@/assets/retrato.png.asset.json";
 
 const AboutSection = () => {
   const ref = useRef(null);
