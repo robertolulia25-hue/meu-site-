@@ -49,24 +49,24 @@ const AboutSection = () => {
             <div className="gold-line-left mb-6" />
             
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
-              Sobre o <span className="text-gradient-gold">Advogado</span>
+              Sobre <span className="text-gradient-gold">Roberto Lima</span>
             </h2>
 
             <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p className="text-lg font-serif-elegant">
-                Com mais de <span className="text-gold font-medium">15 anos de experiência</span> atuando em renomados escritórios de advocacia, construí uma trajetória sólida pautada pela excelência técnica e compromisso com os interesses de cada cliente.
+                Com mais de 15 anos de experiência na advocacia, construí minha trajetória profissional atuando em demandas cíveis e de consumo e em casos que exigem análise cuidadosa dos fatos, dos documentos e das alternativas jurídicas disponíveis.
               </p>
               
               <p>
-                Minha formação e vivência em grandes bancas me proporcionaram um profundo conhecimento prático das mais diversas demandas jurídicas, permitindo oferecer soluções estratégicas e personalizadas para cada situação.
+                A experiência adquirida ao longo dessa trajetória me ensinou que cada caso exige uma análise própria: compreender os fatos, identificar os riscos, avaliar as provas disponíveis e definir a estratégia jurídica mais adequada.
               </p>
 
               <p>
-                Acredito que a advocacia vai além da simples prestação de serviços — trata-se de construir relações de confiança, ouvindo atentamente as necessidades de cada cliente e trabalhando incansavelmente para alcançar os melhores resultados.
+                Meu trabalho é pautado pela análise individual de cada situação, pela comunicação clara com o cliente e pela busca de soluções jurídicas responsáveis, construídas de acordo com as características e necessidades de cada caso.
               </p>
 
               <p className="font-serif-elegant text-lg italic text-gold/80 border-l-2 border-gold/30 pl-4 mt-8">
-                "Cada caso é único e merece dedicação exclusiva, aliando conhecimento técnico à sensibilidade humana."
+                "Cada caso é único e merece atenção individual, aliando conhecimento técnico, estratégia e sensibilidade humana."
               </p>
             </div>
           </motion.div>
