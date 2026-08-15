@@ -58,7 +58,7 @@ const AboutSection = () => {
               </p>
               
               <p>
-                A experiência adquirida ao longo dessa trajetória me ensinou que cada caso exige uma análise própria: compreender os fatos, identificar os riscos, avaliar as provas disponíveis e definir a estratória jurídica mais adequada.
+                A experiência adquirida ao longo dessa trajetória me ensinou que cada caso exige uma análise própria: compreender os fatos, identificar os riscos, avaliar as provas disponíveis e definir a estratégia jurídica mais adequada.
               </p>
 
               <p>
