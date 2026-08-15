@@ -1,11 +1,18 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
-const WHATSAPP_URL = "https://wa.me/5511982727659?text=Olá! Gostaria de agendar uma consulta.";
+const DEFAULT_MESSAGE = "Olá! Gostaria de agendar uma consulta.";
+const buildWhatsAppUrl = (message: string) =>
+  `https://wa.me/5511982727659?text=${encodeURIComponent(message)}`;
 const REDIRECT_SECONDS = 5;
 
 const Obrigado = () => {
+  const location = useLocation();
+  const message =
+    (location.state as { message?: string } | null)?.message ?? DEFAULT_MESSAGE;
+  const whatsappUrl = buildWhatsAppUrl(message);
   const [countdown, setCountdown] = useState(REDIRECT_SECONDS);
 
   useEffect(() => {
@@ -13,7 +20,7 @@ const Obrigado = () => {
       setCountdown((prev) => {
         if (prev <= 1) {
           clearInterval(timer);
-          window.location.href = WHATSAPP_URL;
+          window.location.href = whatsappUrl;
           return 0;
         }
         return prev - 1;
@@ -21,7 +28,7 @@ const Obrigado = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [whatsappUrl]);
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center px-6">
@@ -56,7 +63,7 @@ const Obrigado = () => {
         </div>
 
         <a
-          href={WHATSAPP_URL}
+          href={whatsappUrl}
           className="inline-block px-8 py-4 text-white font-medium tracking-wider uppercase text-sm rounded-sm transition-all duration-300 hover:opacity-90"
           style={{ backgroundColor: "#25D366" }}
           rel="noopener noreferrer"

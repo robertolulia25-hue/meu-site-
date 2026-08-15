@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-const WhatsAppButton = () => {
+interface WhatsAppButtonProps {
+  message?: string;
+}
+
+const WhatsAppButton = ({ message }: WhatsAppButtonProps) => {
   const navigate = useNavigate();
 
   return (
     <motion.button
-      onClick={() => navigate("/obrigado")}
+      onClick={() => navigate("/obrigado", message ? { state: { message } } : undefined)}
       className="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300"
       style={{ backgroundColor: "#25D366" }}
       initial={{ scale: 0, opacity: 0 }}

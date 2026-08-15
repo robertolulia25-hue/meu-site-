@@ -272,7 +272,7 @@ const DireitoBancario = () => {
               Fraudes bancárias, PIX não reconhecido, empréstimos não contratados, transações indevidas e falhas de segurança podem causar prejuízos significativos. Quando o banco não soluciona o problema de forma adequada, é possível analisar a responsabilidade da instituição e as medidas jurídicas cabíveis para proteger seus direitos.
             </p>
             <button
-              onClick={() => navigate("/obrigado")}
+              onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
               className="px-10 py-4 bg-gradient-gold text-primary-foreground font-medium tracking-wider uppercase text-sm rounded-sm shadow-gold hover:shadow-lg transition-all duration-300"
             >
               Fale sobre seu caso
@@ -554,7 +554,7 @@ const DireitoBancario = () => {
               Fraudes, operações não reconhecidas e cobranças indevidas podem exigir uma análise jurídica cuidadosa. Entre em contato para apresentar seu caso e verificar as medidas que podem ser adotadas.
             </p>
             <button
-              onClick={() => navigate("/obrigado")}
+              onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
               className="px-10 py-4 bg-gradient-gold text-primary-foreground font-medium tracking-wider uppercase text-sm rounded-sm shadow-gold hover:shadow-lg transition-all duration-300"
             >
               Fale sobre seu caso
@@ -564,7 +564,7 @@ const DireitoBancario = () => {
       </section>
 
       <Footer />
-      <WhatsAppButton />
+      <WhatsAppButton message={WHATSAPP_MESSAGE} />
     </div>
   );
 };
