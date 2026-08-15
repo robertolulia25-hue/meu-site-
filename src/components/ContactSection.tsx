@@ -64,7 +64,7 @@ const ContactSection = () => {
                       WhatsApp
                     </h3>
                     <p className="text-muted-foreground mb-3">
-                      Resposta rápida e atendimento personalizado
+                      Atendimento personalizado para entender seu caso
                     </p>
                     <span className="font-serif-elegant text-2xl text-gold">
                       {phoneNumber}
