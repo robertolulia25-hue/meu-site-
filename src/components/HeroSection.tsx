@@ -52,7 +52,7 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Advogado & Consultoria
+            ADVOCACIA E CONSULTORIA JURÍDICA
           </motion.p>
 
           {/* Tagline */}
@@ -62,7 +62,7 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
           >
-            Excelência jurídica com dedicação e compromisso em cada caso
+            Análise cuidadosa, estratégia jurídica e atuação personalizada para cada caso.
           </motion.p>
 
           {/* Decorative line */}
@@ -83,7 +83,7 @@ const HeroSection = () => {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <span className="relative z-10">Fale Conosco</span>
+            <span className="relative z-10">Fale sobre seu caso</span>
             <div className="absolute inset-0 bg-gold-dark opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </motion.button>
         </motion.div>
