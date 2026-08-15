@@ -53,7 +53,7 @@ const AboutSection = () => {
             </h2>
 
             <div className="space-y-5 text-muted-foreground leading-relaxed">
-              <p className="text-lg font-serif-elegant">
+              <p>
                 Com mais de 15 anos de experiência na advocacia, construí minha trajetória profissional atuando em demandas cíveis e de consumo e em casos que exigem análise cuidadosa dos fatos, dos documentos e das alternativas jurídicas disponíveis.
               </p>
               
