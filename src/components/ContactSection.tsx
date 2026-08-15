@@ -58,7 +58,7 @@ const ContactSection = () => {
                   
                   <div className="flex-1">
                     <span className="text-gold text-sm font-medium tracking-wider uppercase mb-2 block">
-                      Atendimento Preferencial
+                      Atendimento pelo WhatsApp
                     </span>
                     <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-2">
                       WhatsApp
