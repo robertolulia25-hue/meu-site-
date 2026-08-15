@@ -52,7 +52,7 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Advogado & Consultoria
+            ADVOCACIA E CONSULTORIA JURÍDICA
           </motion.p>
 
           {/* Tagline */}
