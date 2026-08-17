@@ -4,6 +4,10 @@ export const LAWYER_NAME = "Roberto Lima";
 export const PHONE = "+55-11-98272-7659";
 export const EMAIL = "robertolulia@adv.oabsp.org.br";
 export const AREA_SERVED = "São Paulo";
+/** Único asset profissional já existente no projeto adequado para compartilhamento social */
+export const SOCIAL_IMAGE = "https://www.robertolimajuridico.com.br/retrato.png";
+export const SOCIAL_IMAGE_ALT =
+  "Roberto Lima, advogado em São Paulo — Advocacia e Consultoria Jurídica";
 
 export const absoluteUrl = (path: string) =>
   `${SITE_URL}${path === "/" ? "/" : path}`;
