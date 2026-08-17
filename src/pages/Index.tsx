@@ -6,7 +6,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Seo from "@/components/Seo";
-import { legalServiceSchema, personSchema, websiteSchema } from "@/lib/seo";
+
 
 const PAGE_TITLE =
   "Roberto Lima | Advogado em São Paulo — Consumidor, Bancário e Médico";
