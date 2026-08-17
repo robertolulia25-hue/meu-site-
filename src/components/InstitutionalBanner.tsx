@@ -4,6 +4,9 @@ const InstitutionalBanner = () => {
   return (
     <section aria-label="Banner institucional Roberto Lulia Advogados" className="bg-background py-8 md:py-12">
       <div className="container mx-auto px-6">
+        <h1 className="sr-only">
+          Roberto Lulia Advogados — Advogado em São Paulo: Direito do Consumidor, Bancário, Médico e Digital
+        </h1>
         <div className="relative overflow-hidden rounded-sm border border-gold/20 shadow-elegant">
           <img
             src={banner}
