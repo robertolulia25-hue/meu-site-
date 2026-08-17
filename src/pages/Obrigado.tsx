@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { useLocation } from "react-router-dom";
+import Seo from "@/components/Seo";
 
 const DEFAULT_MESSAGE = "Olá! Gostaria de agendar uma consulta.";
 const buildWhatsAppUrl = (message: string) =>
@@ -32,6 +33,12 @@ const Obrigado = () => {
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center px-6">
+      <Seo
+        title="Redirecionando para o WhatsApp — Roberto Lima Advogado"
+        description="Página de redirecionamento para atendimento por WhatsApp."
+        path="/obrigado"
+        noindex
+      />
       <motion.div
         className="max-w-md w-full text-center"
         initial={{ opacity: 0, y: 30 }}

@@ -30,7 +30,11 @@ const AboutSection = () => {
               <div className="relative overflow-hidden rounded-sm shadow-elegant">
                 <img 
                   src="/retrato.png" 
-                  alt="Dr. Roberto Lima"
+                  alt="Roberto Lima, advogado em São Paulo, em seu ambiente de trabalho"
+                  width={900}
+                  height={1200}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-auto object-cover aspect-[3/4]"
                 />
                 {/* Gradient overlay */}

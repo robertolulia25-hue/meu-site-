@@ -2,8 +2,14 @@ import { motion } from "framer-motion";
 import { useNavigate, Link } from "react-router-dom";
 import { AlertCircle, CheckCircle2, ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import Seo from "@/components/Seo";
+import { breadcrumbSchema, serviceSchema } from "@/lib/seo";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+
+const PAGE_TITLE = "Advogado de Direito do Consumidor em São Paulo — Roberto Lima";
+const PAGE_DESCRIPTION =
+  "Advogado em São Paulo para problemas de consumo: produto com defeito, cobrança indevida, negativação indevida, compras online e serviços mal prestados.";
 
 const problemas = [
   {
@@ -38,6 +44,22 @@ const DireitoConsumidor = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title={PAGE_TITLE}
+        description={PAGE_DESCRIPTION}
+        path="/direito-consumidor"
+        schemas={[
+          serviceSchema({
+            name: "Advogado de Direito do Consumidor em São Paulo",
+            description: PAGE_DESCRIPTION,
+            path: "/direito-consumidor",
+          }),
+          breadcrumbSchema([
+            { name: "Início", path: "/" },
+            { name: "Direito do Consumidor", path: "/direito-consumidor" },
+          ]),
+        ]}
+      />
       <Navigation />
 
       {/* Hero */}

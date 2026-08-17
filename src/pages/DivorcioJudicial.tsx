@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import {
@@ -13,6 +12,8 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import Seo from "@/components/Seo";
+import { breadcrumbSchema, faqSchema, serviceSchema } from "@/lib/seo";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import {
@@ -152,104 +153,29 @@ const faq = [
   },
 ];
 
-const setMeta = (selector: string, create: () => HTMLElement, apply: (el: Element) => void) => {
-  let el = document.head.querySelector(selector);
-  if (!el) {
-    el = create();
-    document.head.appendChild(el);
-  }
-  apply(el);
-  return el;
-};
 
 const DivorcioJudicial = () => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const previousTitle = document.title;
-    document.title = PAGE_TITLE;
-
-    const managed: { el: Element; attr: string; previous: string | null }[] = [];
-
-    const applyTag = (
-      selector: string,
-      create: () => HTMLElement,
-      attr: string,
-      value: string
-    ) => {
-      const el = setMeta(selector, create, (node) => {
-        managed.push({ el: node, attr, previous: node.getAttribute(attr) });
-        node.setAttribute(attr, value);
-      });
-      return el;
-    };
-
-    const meta = (name: string, value: string) =>
-      applyTag(
-        `meta[name="${name}"]`,
-        () => Object.assign(document.createElement("meta"), { name }),
-        "content",
-        value
-      );
-
-    const ogMeta = (property: string, value: string) =>
-      applyTag(
-        `meta[property="${property}"]`,
-        () => {
-          const el = document.createElement("meta");
-          el.setAttribute("property", property);
-          return el;
-        },
-        "content",
-        value
-      );
-
-    meta("description", PAGE_DESCRIPTION);
-    meta("robots", "index, follow");
-    meta("twitter:card", "summary_large_image");
-    meta("twitter:title", PAGE_TITLE);
-    meta("twitter:description", PAGE_DESCRIPTION);
-
-    ogMeta("og:title", PAGE_TITLE);
-    ogMeta("og:description", PAGE_DESCRIPTION);
-    ogMeta("og:url", PAGE_URL);
-    ogMeta("og:type", "website");
-
-    applyTag(
-      'link[rel="canonical"]',
-      () => Object.assign(document.createElement("link"), { rel: "canonical" }),
-      "href",
-      PAGE_URL
-    );
-
-    const ld = document.createElement("script");
-    ld.type = "application/ld+json";
-    ld.textContent = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: faq.map((item) => ({
-        "@type": "Question",
-        name: item.q,
-        acceptedAnswer: { "@type": "Answer", text: item.a },
-      })),
-    });
-    document.head.appendChild(ld);
-
-    return () => {
-      document.title = previousTitle;
-      managed.forEach(({ el, attr, previous }) => {
-        if (previous === null) {
-          el.remove();
-        } else {
-          el.setAttribute(attr, previous);
-        }
-      });
-      ld.remove();
-    };
-  }, []);
-
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title={PAGE_TITLE}
+        description={PAGE_DESCRIPTION}
+        path="/divorcio-judicial"
+        schemas={[
+          serviceSchema({
+            name: "Advogado para Divórcio Judicial em São Paulo",
+            description: PAGE_DESCRIPTION,
+            path: "/divorcio-judicial",
+          }),
+          breadcrumbSchema([
+            { name: "Início", path: "/" },
+            { name: "Divórcio Judicial", path: "/divorcio-judicial" },
+          ]),
+          faqSchema(faq),
+        ]}
+      />
       <Navigation />
 
       {/* Hero */}

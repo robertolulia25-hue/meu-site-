@@ -2,8 +2,14 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Stethoscope, HeartPulse, Pill, Building2, FileText, AlertCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import Seo from "@/components/Seo";
+import { breadcrumbSchema, serviceSchema } from "@/lib/seo";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+
+const PAGE_TITLE = "Advogado de Direito Médico e da Saúde em São Paulo — Roberto Lima";
+const PAGE_DESCRIPTION =
+  "Advogado em São Paulo para negativa de plano de saúde, cobertura de tratamentos, medicamentos, home care e questões de responsabilidade médica. Análise individual do caso.";
 
 const problemas = [
   {
@@ -95,6 +101,22 @@ const DireitoMedico = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title={PAGE_TITLE}
+        description={PAGE_DESCRIPTION}
+        path="/direito-medico"
+        schemas={[
+          serviceSchema({
+            name: "Advogado de Direito Médico e da Saúde em São Paulo",
+            description: PAGE_DESCRIPTION,
+            path: "/direito-medico",
+          }),
+          breadcrumbSchema([
+            { name: "Início", path: "/" },
+            { name: "Direito Médico e da Saúde", path: "/direito-medico" },
+          ]),
+        ]}
+      />
       <Navigation />
 
       {/* Hero */}

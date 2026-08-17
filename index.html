@@ -5,48 +5,72 @@
     <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Roberto Lima | Advogado & Consultoria Jurídica em São Paulo</title>
-    <meta name="description" content="Advogado com mais de 15 anos de experiência em Direito do Consumidor, Direito Bancário, Direito Médico e Processo Civil. Atendimento personalizado em São Paulo." />
+    <title>Roberto Lima | Advogado em São Paulo — Consumidor, Bancário e Médico</title>
+    <meta data-rh="true" name="description" content="Advogado em São Paulo com atuação em Direito do Consumidor, Direito Bancário, Direito Médico, Direito Digital, família e contratos. Atendimento personalizado por WhatsApp." />
     <meta name="author" content="Roberto Lima - Advogado & Consultoria" />
-    <link rel="canonical" href="https://www.robertolimajuridico.com.br/" />
+    <meta data-rh="true" name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0b1220" />
 
     <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://*.analytics.google.com https://googleads.g.doubleclick.net; frame-src 'self' https://www.googletagmanager.com;" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://*.analytics.google.com https://googleads.g.doubleclick.net https://stats.g.doubleclick.net https://ad.doubleclick.net https://www.google.com https://www.googleadservices.com; frame-src 'self' https://www.googletagmanager.com https://td.doubleclick.net; base-uri 'self'; form-action 'self';" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Roberto Lima | Advogado & Consultoria Jurídica" />
-    <meta property="og:description" content="Advocacia especializada em Direito do Consumidor, Bancário, Médico e Civil. Mais de 15 anos de experiência." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.robertolimajuridico.com.br/" />
-    <meta property="og:locale" content="pt_BR" />
+    <!-- Open Graph (fallback estático; rotas sobrescrevem via Helmet) -->
+    <meta data-rh="true" property="og:site_name" content="Roberto Lima — Advogado & Consultoria Jurídica" />
+    <meta data-rh="true" property="og:title" content="Roberto Lima | Advogado em São Paulo" />
+    <meta data-rh="true" property="og:description" content="Advocacia e consultoria jurídica em São Paulo: consumidor, bancário, médico, digital, família e contratos." />
+    <meta data-rh="true" property="og:type" content="website" />
+    <meta data-rh="true" property="og:url" content="https://www.robertolimajuridico.com.br/" />
+    <meta data-rh="true" property="og:locale" content="pt_BR" />
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Roberto Lima | Advogado & Consultoria Jurídica" />
-    <meta name="twitter:description" content="Advocacia especializada em Direito do Consumidor, Bancário, Médico e Civil." />
+    <meta data-rh="true" name="twitter:card" content="summary_large_image" />
+    <meta data-rh="true" name="twitter:title" content="Roberto Lima | Advogado em São Paulo" />
+    <meta data-rh="true" name="twitter:description" content="Advocacia e consultoria jurídica em São Paulo: consumidor, bancário, médico, digital, família e contratos." />
 
-    <!-- Schema.org Local Business -->
+
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LegalService",
-      "name": "Roberto Lima - Advogado & Consultoria",
-      "description": "Escritório de advocacia especializado em Direito do Consumidor, Direito Bancário, Direito Médico e Processo Civil.",
-      "telephone": "+55-11-98272-7659",
-      "email": "robertolulia@adv.oabsp.org.br",
-      "url": "https://www.robertolimajuridico.com.br/",
-      "areaServed": {
-        "@type": "City",
-        "name": "São Paulo"
-      },
-      "priceRange": "$$",
-      "knowsAbout": ["Direito do Consumidor", "Direito Bancário", "Direito Médico", "Processo Civil", "Inventário Extrajudicial", "Separação Extrajudicial"],
-      "sameAs": []
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.robertolimajuridico.com.br/#website",
+          "name": "Roberto Lima — Advogado & Consultoria Jurídica",
+          "url": "https://www.robertolimajuridico.com.br/",
+          "inLanguage": "pt-BR",
+          "publisher": { "@id": "https://www.robertolimajuridico.com.br/#legalservice" }
+        },
+        {
+          "@type": "LegalService",
+          "@id": "https://www.robertolimajuridico.com.br/#legalservice",
+          "name": "Roberto Lima - Advogado & Consultoria",
+          "description": "Advogado em São Paulo com atuação em Direito do Consumidor, Direito Bancário, Direito Médico, Direito Digital, Direito de Família e elaboração de contratos.",
+          "telephone": "+55-11-98272-7659",
+          "email": "robertolulia@adv.oabsp.org.br",
+          "url": "https://www.robertolimajuridico.com.br/",
+          "areaServed": { "@type": "City", "name": "São Paulo" },
+          "knowsAbout": ["Direito do Consumidor", "Direito Bancário", "Direito Médico e da Saúde", "Direito Digital e LGPD", "Divórcio Judicial", "Separação de fato em cartório", "Inventário extrajudicial", "Elaboração e revisão de contratos"],
+          "provider": { "@id": "https://www.robertolimajuridico.com.br/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.robertolimajuridico.com.br/#person",
+          "name": "Roberto Lima",
+          "jobTitle": "Advogado",
+          "email": "robertolulia@adv.oabsp.org.br",
+          "telephone": "+55-11-98272-7659",
+          "url": "https://www.robertolimajuridico.com.br/",
+          "image": "https://www.robertolimajuridico.com.br/retrato.png",
+          "worksFor": { "@id": "https://www.robertolimajuridico.com.br/#legalservice" },
+          "areaServed": { "@type": "City", "name": "São Paulo" }
+        }
+      ]
     }
     </script>
+
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X967YZTT39"></script>
