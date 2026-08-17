@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
+import InstitutionalBanner from "@/components/InstitutionalBanner";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import ContactSection from "@/components/ContactSection";
@@ -21,6 +22,7 @@ const Index = () => {
       <Seo title={PAGE_TITLE} description={PAGE_DESCRIPTION} path="/" />
       <Navigation />
       <HeroSection />
+      <InstitutionalBanner />
       <ServicesSection />
       <AboutSection />
       <ContactSection />
