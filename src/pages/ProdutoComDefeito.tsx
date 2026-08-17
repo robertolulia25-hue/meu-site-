@@ -2,8 +2,14 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { FileQuestion, CalendarDays, MessageCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import Seo from "@/components/Seo";
+import { breadcrumbSchema, serviceSchema } from "@/lib/seo";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+
+const PAGE_TITLE = "Advogado para Produto com Defeito | Direitos do Consumidor — Roberto Lima";
+const PAGE_DESCRIPTION =
+  "Comprou um produto com defeito e a empresa não resolveu? Entenda os prazos de 30 e 90 dias, o vício oculto e o que é analisado antes de qualquer medida jurídica.";
 
 const analiseItems = [
   {
@@ -31,6 +37,23 @@ const ProdutoComDefeito = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title={PAGE_TITLE}
+        description={PAGE_DESCRIPTION}
+        path="/direito-consumidor/produto-com-defeito"
+        schemas={[
+          serviceSchema({
+            name: "Advogado para casos de produto com defeito em São Paulo",
+            description: PAGE_DESCRIPTION,
+            path: "/direito-consumidor/produto-com-defeito",
+          }),
+          breadcrumbSchema([
+            { name: "Início", path: "/" },
+            { name: "Direito do Consumidor", path: "/direito-consumidor" },
+            { name: "Produto com Defeito", path: "/direito-consumidor/produto-com-defeito" },
+          ]),
+        ]}
+      />
       <Navigation />
 
       {/* Hero */}

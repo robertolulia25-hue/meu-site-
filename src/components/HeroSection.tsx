@@ -30,7 +30,10 @@ const HeroSection = () => {
           {/* Logo */}
           <motion.img 
             src={logo} 
-            alt="Roberto Lima - Advogado & Consultoria"
+            alt="Logotipo RL — Roberto Lima Advogado & Consultoria Jurídica"
+            width={288}
+            height={288}
+            fetchPriority="high"
             className="w-48 md:w-60 lg:w-72 mb-4 drop-shadow-2xl"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}

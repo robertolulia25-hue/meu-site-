@@ -5,10 +5,23 @@ import ServicesSection from "@/components/ServicesSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Seo from "@/components/Seo";
+import { legalServiceSchema, personSchema, websiteSchema } from "@/lib/seo";
+
+const PAGE_TITLE =
+  "Roberto Lima | Advogado em São Paulo — Consumidor, Bancário e Médico";
+const PAGE_DESCRIPTION =
+  "Advogado em São Paulo com atuação em Direito do Consumidor, Direito Bancário, Direito Médico, Direito Digital, família e contratos. Atendimento personalizado por WhatsApp.";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title={PAGE_TITLE}
+        description={PAGE_DESCRIPTION}
+        path="/"
+        schemas={[websiteSchema, legalServiceSchema, personSchema]}
+      />
       <Navigation />
       <HeroSection />
       <ServicesSection />
