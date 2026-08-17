@@ -2,7 +2,7 @@ import banner from "@/assets/banner-institucional.jpg";
 
 const InstitutionalBanner = () => {
   return (
-    <section aria-label="Banner institucional Roberto Lulia Advogados" className="bg-background py-8 md:py-12">
+    <section aria-label="Banner institucional Roberto Lulia Advogados" className="bg-background pt-28 pb-8 md:pb-12">
       <div className="container mx-auto px-6">
         <h1 className="sr-only">
           Roberto Lulia Advogados — Advogado em São Paulo: Direito do Consumidor, Bancário, Médico e Digital
