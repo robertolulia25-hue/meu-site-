@@ -6,7 +6,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Seo from "@/components/Seo";
-import { legalServiceSchema, personSchema, websiteSchema } from "@/lib/seo";
+
 
 const PAGE_TITLE =
   "Roberto Lima | Advogado em São Paulo — Consumidor, Bancário e Médico";
@@ -16,12 +16,9 @@ const PAGE_DESCRIPTION =
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Seo
-        title={PAGE_TITLE}
-        description={PAGE_DESCRIPTION}
-        path="/"
-        schemas={[websiteSchema, legalServiceSchema, personSchema]}
-      />
+      {/* JSON-LD de WebSite/LegalService/Person vive estaticamente no index.html
+          (visível a crawlers sem JS); aqui evitamos duplicar o mesmo grafo. */}
+      <Seo title={PAGE_TITLE} description={PAGE_DESCRIPTION} path="/" />
       <Navigation />
       <HeroSection />
       <ServicesSection />
