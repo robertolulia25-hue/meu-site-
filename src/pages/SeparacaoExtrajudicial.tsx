@@ -25,7 +25,7 @@ import {
 
 const PAGE_TITLE = "Separação de Fato e Inventário Extrajudicial em São Paulo — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Orientação jurídica em São Paulo para a declaração de separação de fato em cartório: análise da documentação, verificação dos requisitos e acompanhamento da lavratura da escritura pública.";
+  "Orientação jurídica em São Paulo para a declaração de separação de fato em cartório e para o inventário extrajudicial, matérias distintas: análise da documentação, verificação dos requisitos e acompanhamento da escritura pública.";
 const PAGE_URL = "https://www.robertolimajuridico.com.br/separacao-extrajudicial";
 const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre uma declaração de Separação de Fato e Inventário Extrajudicial.";
 
@@ -204,7 +204,7 @@ const SeparacaoExtrajudicial = () => {
               Separação de Fato e Inventário Extrajudicial em São Paulo
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-8">
-              Por escritura pública, o casal pode declarar que a convivência conjugal chegou ao fim, registrando formalmente a data da separação de fato. O acompanhamento jurídico auxilia na análise do caso, na organização dos documentos e na correta formalização em cartório.
+              Por escritura pública, o casal pode declarar que a convivência conjugal chegou ao fim, registrando formalmente a data da separação de fato. O inventário extrajudicial é matéria distinta, relativa à partilha de bens após o falecimento, e segue requisitos próprios. Em ambos os casos, o acompanhamento jurídico auxilia na análise da situação, na organização dos documentos e na correta formalização em cartório.
             </p>
             <button
               onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}

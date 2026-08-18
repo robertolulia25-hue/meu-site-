@@ -194,10 +194,10 @@ const DivorcioJudicial = () => {
           >
             <div className="gold-line mb-6" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Divórcio Judicial: atuação estratégica em casos que exigem decisão judicial
+              Advogado para Divórcio Judicial em São Paulo
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-8">
-              Quando não há acordo ou quando o caso exige decisão do Judiciário, o divórcio judicial permite discutir guarda, convivência, alimentos, partilha de bens e medidas urgentes. Cada caso é analisado individualmente e conduzido conforme suas particularidades.
+              Quando não há acordo ou quando o caso exige decisão do Judiciário, o divórcio judicial permite discutir guarda, convivência, alimentos, partilha de bens e medidas urgentes. A orientação jurídica começa pela análise individual do caso, que é conduzido conforme suas particularidades.
             </p>
             <button
               onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
