@@ -8,7 +8,7 @@ const AboutSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="sobre" className="py-14 lg:py-18 bg-navy relative overflow-hidden">
+    <section id="sobre" className="pt-12 pb-8 bg-navy relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-gold/5 to-transparent" />
       
