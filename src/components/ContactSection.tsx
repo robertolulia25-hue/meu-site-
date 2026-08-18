@@ -13,7 +13,7 @@ const ContactSection = () => {
 
 
   return (
-    <section id="contato" className="py-24 lg:py-32 bg-navy relative overflow-hidden">
+    <section id="contato" className="py-14 lg:py-18 bg-navy relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gold/5 rounded-full blur-3xl" />
