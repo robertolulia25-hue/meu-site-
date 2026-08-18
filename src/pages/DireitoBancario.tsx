@@ -25,7 +25,7 @@ import {
 
 const PAGE_TITLE = "Advogado de Direito Bancário em São Paulo | Fraudes e PIX — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Advogado em São Paulo para questões bancárias: fraudes, PIX não reconhecido, empréstimos não contratados, cobranças indevidas e conflitos com instituições financeiras.";
+  "Advogado em São Paulo para questões bancárias: fraudes, golpe do PIX, PIX não reconhecido, empréstimos não contratados, transações não reconhecidas e cobranças indevidas.";
 const PAGE_URL = "https://www.robertolimajuridico.com.br/direito-bancario";
 const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre um problema bancário.";
 
@@ -56,7 +56,7 @@ const problemas = [
     number: "04",
     title: "Compras e transações não reconhecidas",
     description:
-      "Operações realizadas com cartão, conta ou outros meios de pagamento que não foram feitas pelo titular.",
+      "Transações não reconhecidas realizadas com cartão, conta ou outros meios de pagamento que não foram efetuadas pelo titular.",
   },
   {
     icon: Receipt,
@@ -191,10 +191,10 @@ const DireitoBancario = () => {
           >
             <div className="gold-line mb-6" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Direito Bancário: atuação em fraudes e problemas com bancos
+              Advogado de Direito Bancário em São Paulo
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-8">
-              Fraudes bancárias, PIX não reconhecido, empréstimos não contratados, transações indevidas e falhas de segurança podem causar prejuízos significativos. Quando o banco não soluciona o problema de forma adequada, é possível analisar a responsabilidade da instituição e as medidas jurídicas cabíveis para proteger seus direitos.
+              Fraudes bancárias, golpe do PIX, PIX não reconhecido, empréstimos não contratados, transações não reconhecidas e cobranças indevidas: cada caso é analisado individualmente para avaliar a responsabilidade do banco e as medidas jurídicas cabíveis.
             </p>
             <button
               onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
@@ -218,7 +218,7 @@ const DireitoBancario = () => {
             transition={{ duration: 0.7 }}
           >
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-              Seu dinheiro foi movimentado sem autorização? O banco negou a fraude ou não resolveu o problema?
+              Seu dinheiro foi movimentado sem autorização? O banco negou a fraude, o golpe do PIX, o empréstimo não contratado ou a cobrança indevida?
             </h2>
             <p className="text-muted-foreground leading-relaxed text-justify md:text-center">
               Situações como essas precisam ser analisadas individualmente, considerando como a operação ocorreu, quais medidas foram adotadas pelo banco, as provas disponíveis e a resposta apresentada pela instituição financeira.
