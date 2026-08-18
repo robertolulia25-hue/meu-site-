@@ -25,7 +25,7 @@ import {
 
 const PAGE_TITLE = "Advogado de Direito Bancário em São Paulo | Fraudes e PIX — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Advogado em São Paulo para questões bancárias: fraudes, PIX não reconhecido, empréstimos não contratados, cobranças indevidas e conflitos com instituições financeiras.";
+  "Advogado em São Paulo para questões bancárias: fraudes, golpe do PIX, PIX não reconhecido, empréstimos não contratados, transações não reconhecidas e cobranças indevidas.";
 const PAGE_URL = "https://www.robertolimajuridico.com.br/direito-bancario";
 const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre um problema bancário.";
 
