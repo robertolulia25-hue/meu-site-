@@ -17,7 +17,9 @@ const DireitoDigital = lazy(() => import("./pages/DireitoDigital"));
 const SeparacaoExtrajudicial = lazy(() => import("./pages/SeparacaoExtrajudicial"));
 const DivorcioJudicial = lazy(() => import("./pages/DivorcioJudicial"));
 const ElaboracaoDeContratos = lazy(() => import("./pages/ElaboracaoDeContratos"));
+const PoliticaDePrivacidade = lazy(() => import("./pages/PoliticaDePrivacidade"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+
 
 const queryClient = new QueryClient();
 
@@ -42,6 +44,8 @@ const App = () => (
             <Route path="/divorcio-judicial" element={<DivorcioJudicial />} />
             <Route path="/separacao-judicial" element={<Navigate to="/divorcio-judicial" replace />} />
             <Route path="/elaboracao-de-contratos" element={<ElaboracaoDeContratos />} />
+            <Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
+
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
