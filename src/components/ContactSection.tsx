@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Phone, Mail, MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const navigate = useNavigate();
 
   const emailLink = "mailto:robertolulia@adv.oabsp.org.br";
   const phoneNumber = "(11) 98272-7659";
+
 
   return (
     <section id="contato" className="py-24 lg:py-32 bg-navy relative overflow-hidden">
