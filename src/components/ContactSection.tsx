@@ -13,7 +13,7 @@ const ContactSection = () => {
 
 
   return (
-    <section id="contato" className="py-14 lg:py-18 bg-navy relative overflow-hidden">
+    <section id="contato" className="pt-8 pb-12 lg:pt-10 lg:pb-14 bg-navy relative overflow-hidden">
       {/* Decorative background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gold/5 rounded-full blur-3xl" />
@@ -21,7 +21,7 @@ const ContactSection = () => {
 
       <div className="container mx-auto px-6 relative z-10" ref={ref}>
         <motion.div 
-          className="text-center mb-16"
+          className="text-center mb-8"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}

@@ -67,7 +67,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section id="servicos" className="py-24 lg:py-32 bg-gradient-dark relative">
+    <section id="servicos" className="pt-12 pb-12 lg:pt-16 lg:pb-16 bg-gradient-dark relative">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/4 left-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />

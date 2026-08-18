@@ -29,7 +29,7 @@ const HowItWorksSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="atendimento" className="py-20 lg:py-28 bg-background">
+    <section id="atendimento" className="py-14 lg:py-16 bg-background">
       <div className="container mx-auto px-6" ref={ref}>
         <motion.div
           className="text-center mb-14"
