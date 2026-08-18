@@ -23,9 +23,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const PAGE_TITLE = "Divórcio Judicial | Orientação e Estratégia Jurídica — Roberto Lima";
+const PAGE_TITLE = "Advogado para Divórcio Judicial em São Paulo — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Atuação jurídica em divórcio judicial. Análise individual do caso, definição de estratégia e acompanhamento processual em questões envolvendo filhos, guarda, alimentos e partilha de bens.";
+  "Advogado em São Paulo para divórcio judicial. Análise individual do caso, definição de estratégia e acompanhamento processual em questões envolvendo filhos, guarda, alimentos e partilha de bens.";
 const PAGE_URL = "https://www.robertolimajuridico.com.br/divorcio-judicial";
 const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre um divórcio judicial.";
 

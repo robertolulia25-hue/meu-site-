@@ -23,9 +23,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const PAGE_TITLE = "Separação de Fato e Inventário Extrajudicial | Declaração e Orientação Jurídica — Roberto Lima";
+const PAGE_TITLE = "Separação de Fato e Inventário Extrajudicial em São Paulo — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Orientação jurídica para a declaração de Separação de Fato e Inventário Extrajudicial: análise da documentação, verificação dos requisitos e acompanhamento da lavratura da escritura pública.";
+  "Orientação jurídica em São Paulo para a declaração de separação de fato em cartório: análise da documentação, verificação dos requisitos e acompanhamento da lavratura da escritura pública.";
 const PAGE_URL = "https://www.robertolimajuridico.com.br/separacao-extrajudicial";
 const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre uma declaração de Separação de Fato e Inventário Extrajudicial.";
 
@@ -190,7 +190,7 @@ const SeparacaoExtrajudicial = () => {
           >
             <div className="gold-line mb-6" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Separação de Fato e Inventário Extrajudicial: orientação jurídica para a declaração
+              Separação de Fato e Inventário Extrajudicial em São Paulo
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-8">
               Por escritura pública, o casal pode declarar que a convivência conjugal chegou ao fim, registrando formalmente a data da separação de fato. O acompanhamento jurídico auxilia na análise do caso, na organização dos documentos e na correta formalização em cartório.
@@ -220,7 +220,7 @@ const SeparacaoExtrajudicial = () => {
               Querem registrar formalmente que a vida em comum chegou ao fim?
             </h2>
             <p className="text-muted-foreground leading-relaxed text-justify md:text-center">
-              A declaração de separação de fato é feita em cartório, de forma consensual, e tem objeto próprio: registrar que a comunhão plena de vida cessou e desde quando. Questões como partilha, guarda, convivência e alimentos são tratadas em medidas específicas, avaliadas conforme o caso.
+              A declaração de separação de fato é feita em cartório, de forma consensual, e tem objeto próprio: registrar que a comunhão plena de vida cessou e desde quando. Questões como partilha, guarda, convivência e alimentos são tratadas em medidas específicas, avaliadas conforme o caso. O inventário extrajudicial é procedimento distinto, com requisitos próprios, e é analisado separadamente.
             </p>
           </motion.div>
         </div>

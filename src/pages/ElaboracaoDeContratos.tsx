@@ -23,9 +23,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const PAGE_TITLE = "Elaboração de Contratos | Revisão e Estratégia Jurídica — Roberto Lima";
+const PAGE_TITLE = "Elaboração e Revisão de Contratos em São Paulo — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Elaboração e revisão de contratos particulares e empresariais. Análise das cláusulas, identificação de riscos jurídicos e adequação da operação concreta.";
+  "Elaboração e revisão de contratos particulares e empresariais em São Paulo: análise de cláusulas, identificação de riscos jurídicos e adequação à operação concreta.";
 const PAGE_URL = "https://www.robertolimajuridico.com.br/elaboracao-de-contratos";
 const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre elaboração ou revisão de contratos.";
 

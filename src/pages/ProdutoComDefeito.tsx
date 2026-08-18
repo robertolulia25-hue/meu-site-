@@ -7,9 +7,9 @@ import { breadcrumbSchema, serviceSchema } from "@/lib/seo";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
-const PAGE_TITLE = "Advogado para Produto com Defeito | Direitos do Consumidor — Roberto Lima";
+const PAGE_TITLE = "Advogado para Produto com Defeito em São Paulo — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Comprou um produto com defeito e a empresa não resolveu? Entenda os prazos de 30 e 90 dias, o vício oculto e o que é analisado antes de qualquer medida jurídica.";
+  "Advogado em São Paulo para produto com defeito. Comprou e a empresa não resolveu? Entenda os prazos de 30 e 90 dias, o vício oculto e o que é analisado antes de qualquer medida jurídica.";
 
 const analiseItems = [
   {
