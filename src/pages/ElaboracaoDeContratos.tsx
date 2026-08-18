@@ -190,10 +190,10 @@ const ElaboracaoDeContratos = () => {
           >
             <div className="gold-line mb-6" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Elaboração de Contratos: clareza, adequação e redução de riscos
+              Elaboração e Revisão de Contratos em São Paulo
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-8">
-              Contratos claros e adequados à operação são instrumentos essenciais para reduzir riscos jurídicos. Trabalhamos com elaboração e revisão de contratos particulares e empresariais, adaptando cada cláusula à realidade da negociação.
+              Contratos claros e adequados à operação são instrumentos essenciais para reduzir riscos jurídicos. O trabalho envolve a elaboração e a revisão de contratos particulares e empresariais, com análise de cláusulas, identificação de riscos e adequação de cada instrumento à realidade da negociação.
             </p>
             <button
               onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
