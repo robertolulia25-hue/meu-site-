@@ -36,7 +36,7 @@ export const legalServiceSchema = {
     "Direito Médico e da Saúde",
     "Direito Digital e LGPD",
     "Divórcio Judicial",
-    "Separação de fato em cartório",
+    "Separação de Fato e Inventário Extrajudicial",
     "Inventário extrajudicial",
     "Elaboração e revisão de contratos",
   ],
