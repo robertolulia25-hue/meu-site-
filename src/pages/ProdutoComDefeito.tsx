@@ -72,10 +72,10 @@ const ProdutoComDefeito = () => {
           >
             <div className="gold-line mb-6" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Produto com defeito: quais são os direitos do consumidor?
+              Advogado para Produto com Defeito em São Paulo
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-6">
-              Comprou um produto e ele apresentou defeito? Entenda quais direitos podem estar envolvidos e quais medidas podem ser avaliadas para buscar uma solução.
+              Comprou um produto que apresentou defeito e o fornecedor não resolveu a troca, o reparo ou o reembolso? Entenda quais direitos podem estar envolvidos e quais medidas podem ser avaliadas para buscar uma solução.
             </p>
             <div className="gold-line mb-6" />
           </motion.div>
