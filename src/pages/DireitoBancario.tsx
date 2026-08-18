@@ -218,7 +218,7 @@ const DireitoBancario = () => {
             transition={{ duration: 0.7 }}
           >
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
-              Seu dinheiro foi movimentado sem autorização? O banco negou a fraude ou não resolveu o problema?
+              Seu dinheiro foi movimentado sem autorização? O banco negou a fraude, o golpe do PIX, o empréstimo não contratado ou a cobrança indevida?
             </h2>
             <p className="text-muted-foreground leading-relaxed text-justify md:text-center">
               Situações como essas precisam ser analisadas individualmente, considerando como a operação ocorreu, quais medidas foram adotadas pelo banco, as provas disponíveis e a resposta apresentada pela instituição financeira.
