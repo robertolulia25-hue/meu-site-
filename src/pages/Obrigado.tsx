@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import { useLocation } from "react-router-dom";
 import Seo from "@/components/Seo";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 const DEFAULT_MESSAGE = "Olá! Gostaria de agendar uma consulta.";
 const buildWhatsAppUrl = (message: string) =>
@@ -15,6 +16,17 @@ const Obrigado = () => {
     (location.state as { message?: string } | null)?.message ?? DEFAULT_MESSAGE;
   const whatsappUrl = buildWhatsAppUrl(message);
   const [countdown, setCountdown] = useState(REDIRECT_SECONDS);
+  const tracked = useRef(false);
+
+  // Todos os CTAs de WhatsApp do site passam por /obrigado: aqui é o ponto
+  // único e confiável para registrar a conversão no GA4.
+  useEffect(() => {
+    if (tracked.current) return;
+    tracked.current = true;
+    trackWhatsAppClick(
+      (location.state as { source?: string } | null)?.source ?? "site",
+    );
+  }, [location.state]);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -30,6 +42,7 @@ const Obrigado = () => {
 
     return () => clearInterval(timer);
   }, [whatsappUrl]);
+
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center px-6">
