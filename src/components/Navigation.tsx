@@ -55,16 +55,20 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo text */}
           <motion.a
-            href="#sobre"
+            href="#inicio"
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection("#sobre");
+              scrollToSection("#inicio");
             }}
-            className="font-serif text-xl text-foreground hover:text-gold transition-colors duration-300 cursor-pointer"
+            className="flex flex-col leading-tight text-foreground hover:text-gold transition-colors duration-300 cursor-pointer"
             whileHover={{ scale: 1.02 }}
           >
-            Roberto Lima
+            <span className="font-serif text-lg md:text-xl">Roberto Lima</span>
+            <span className="text-[10px] md:text-xs tracking-[0.18em] uppercase text-muted-foreground">
+              Advogado • OAB/SP 223.861
+            </span>
           </motion.a>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">

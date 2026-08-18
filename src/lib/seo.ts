@@ -1,9 +1,11 @@
 export const SITE_URL = "https://www.robertolimajuridico.com.br";
 export const SITE_NAME = "Roberto Lima — Advogado & Consultoria Jurídica";
 export const LAWYER_NAME = "Roberto Lima";
+export const OAB = "OAB/SP 223.861";
 export const PHONE = "+55-11-98272-7659";
 export const EMAIL = "robertolulia@adv.oabsp.org.br";
 export const AREA_SERVED = "São Paulo";
+
 /** Único asset profissional já existente no projeto adequado para compartilhamento social */
 export const SOCIAL_IMAGE = "https://www.robertolimajuridico.com.br/retrato.png";
 export const SOCIAL_IMAGE_ALT =
@@ -21,9 +23,9 @@ export const legalServiceSchema = {
   "@context": "https://schema.org",
   "@type": "LegalService",
   "@id": `${SITE_URL}/#legalservice`,
-  name: "Roberto Lima - Advogado & Consultoria",
+  name: SITE_NAME,
   description:
-    "Advogado em São Paulo com atuação em Direito do Consumidor, Direito Bancário, Direito Médico, Direito Digital, Direito de Família e elaboração de contratos.",
+    "Roberto Lima, advogado inscrito na OAB/SP sob o nº 223.861, com atuação em Direito do Consumidor, Direito Bancário, Direito Médico, Direito Digital, procedimentos extrajudiciais e elaboração de contratos, em São Paulo.",
   telephone: PHONE,
   email: EMAIL,
   url: `${SITE_URL}/`,
@@ -47,6 +49,16 @@ export const personSchema = {
   "@id": `${SITE_URL}/#person`,
   name: LAWYER_NAME,
   jobTitle: "Advogado",
+  identifier: OAB,
+  hasCredential: {
+    "@type": "EducationalOccupationalCredential",
+    credentialCategory: "Inscrição profissional",
+    recognizedBy: {
+      "@type": "Organization",
+      name: "Ordem dos Advogados do Brasil — Seção São Paulo",
+    },
+    identifier: OAB,
+  },
   email: EMAIL,
   telephone: PHONE,
   url: `${SITE_URL}/`,
@@ -54,6 +66,7 @@ export const personSchema = {
   worksFor: { "@id": `${SITE_URL}/#legalservice` },
   areaServed: { "@type": "City", name: AREA_SERVED },
 };
+
 
 export const websiteSchema = {
   "@context": "https://schema.org",

@@ -52,14 +52,19 @@ const AboutSection = () => {
           >
             <div className="gold-line-left mb-6" />
             
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-3">
               Sobre <span className="text-gradient-gold">Roberto Lima</span>
             </h2>
 
-            <div className="space-y-5 text-muted-foreground leading-relaxed text-justify">
+            <p className="text-gold/80 text-sm tracking-[0.18em] uppercase mb-6">
+              Advogado • OAB/SP 223.861
+            </p>
+
+            <div className="space-y-5 text-muted-foreground leading-relaxed text-left md:text-justify">
               <p>
                 Com mais de 15 anos de experiência na advocacia, construí minha trajetória profissional atuando em demandas cíveis e de consumo e em casos que exigem análise cuidadosa dos fatos, dos documentos e das alternativas jurídicas disponíveis.
               </p>
+
               
               <p>
                 A experiência adquirida ao longo dessa trajetória me ensinou que cada caso exige uma análise própria: compreender os fatos, identificar os riscos, avaliar as provas disponíveis e definir a estratégia jurídica mais adequada.
