@@ -56,7 +56,7 @@ const problemas = [
     number: "04",
     title: "Compras e transações não reconhecidas",
     description:
-      "Operações realizadas com cartão, conta ou outros meios de pagamento que não foram feitas pelo titular.",
+      "Transações não reconhecidas realizadas com cartão, conta ou outros meios de pagamento que não foram efetuadas pelo titular.",
   },
   {
     icon: Receipt,
