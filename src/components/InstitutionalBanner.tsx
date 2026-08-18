@@ -4,7 +4,7 @@ const InstitutionalBanner = () => {
   return (
     <section
       aria-label="Banner institucional Roberto Lima — Advogado & Consultoria Jurídica"
-      className="bg-background pb-12 md:pb-16"
+      className="bg-background pb-6 md:pb-8"
     >
       <div className="container mx-auto px-6">
         <div className="relative overflow-hidden rounded-sm border border-gold/20 shadow-elegant aspect-[3/1]">

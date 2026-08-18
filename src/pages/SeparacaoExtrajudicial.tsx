@@ -23,11 +23,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const PAGE_TITLE = "Separação de Fato em Cartório | Declaração e Orientação Jurídica — Roberto Lima";
+const PAGE_TITLE = "Separação de Fato e Inventário Extrajudicial | Declaração e Orientação Jurídica — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Orientação jurídica para a declaração de separação de fato em cartório: análise da documentação, verificação dos requisitos e acompanhamento da lavratura da escritura pública.";
+  "Orientação jurídica para a declaração de Separação de Fato e Inventário Extrajudicial: análise da documentação, verificação dos requisitos e acompanhamento da lavratura da escritura pública.";
 const PAGE_URL = "https://www.robertolimajuridico.com.br/separacao-extrajudicial";
-const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre uma declaração de separação de fato em cartório.";
+const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre uma declaração de Separação de Fato e Inventário Extrajudicial.";
 
 const problemas = [
   {
@@ -104,7 +104,7 @@ const etapas = [
   {
     number: "02",
     title: "Definição da medida adequada",
-    text: "Avaliação sobre o cabimento da declaração de separação de fato em cartório e sobre a necessidade de outras medidas, como divórcio, partilha ou questões relativas aos filhos.",
+    text: "Avaliação sobre o cabimento da declaração de Separação de Fato e Inventário Extrajudicial e sobre a necessidade de outras medidas, como divórcio, partilha ou questões relativas aos filhos.",
   },
   {
     number: "03",
@@ -120,11 +120,11 @@ const etapas = [
 
 const faq = [
   {
-    q: "O que é a declaração de separação de fato em cartório?",
+    q: "O que é a declaração de Separação de Fato e Inventário Extrajudicial?",
     a: "É um ato consensual, formalizado por escritura pública em cartório de notas, no qual os cônjuges declaram que a convivência conjugal chegou ao fim e indicam desde quando. Seu objeto é essa declaração, e não a dissolução do casamento.",
   },
   {
-    q: "A separação de fato em cartório é o mesmo que divórcio?",
+    q: "A Separação de Fato e Inventário Extrajudicial é o mesmo que divórcio?",
     a: "Não. O casamento continua existindo até o divórcio. A escritura apenas registra formalmente que a comunhão plena de vida cessou, o que pode ser relevante como marco temporal para diversos efeitos.",
   },
   {
@@ -161,13 +161,13 @@ const SeparacaoExtrajudicial = () => {
         path="/separacao-extrajudicial"
         schemas={[
           serviceSchema({
-            name: "Separação de fato em cartório com orientação jurídica em São Paulo",
+            name: "Separação de Fato e Inventário Extrajudicial com orientação jurídica em São Paulo",
             description: PAGE_DESCRIPTION,
             path: "/separacao-extrajudicial",
           }),
           breadcrumbSchema([
             { name: "Início", path: "/" },
-            { name: "Separação de Fato em Cartório", path: "/separacao-extrajudicial" },
+            { name: "Separação de Fato e Inventário Extrajudicial", path: "/separacao-extrajudicial" },
           ]),
           faqSchema(faq),
         ]}
@@ -190,7 +190,7 @@ const SeparacaoExtrajudicial = () => {
           >
             <div className="gold-line mb-6" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Separação de Fato em Cartório: orientação jurídica para a declaração
+              Separação de Fato e Inventário Extrajudicial: orientação jurídica para a declaração
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-8">
               Por escritura pública, o casal pode declarar que a convivência conjugal chegou ao fim, registrando formalmente a data da separação de fato. O acompanhamento jurídico auxilia na análise do caso, na organização dos documentos e na correta formalização em cartório.
@@ -415,7 +415,7 @@ const SeparacaoExtrajudicial = () => {
           >
             <div className="gold-line mb-6" />
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-12 text-center">
-              Perguntas frequentes sobre separação de fato em cartório
+              Perguntas frequentes sobre Separação de Fato e Inventário Extrajudicial
             </h2>
 
             <Accordion type="single" collapsible className="w-full">
@@ -475,7 +475,7 @@ const SeparacaoExtrajudicial = () => {
               Pensa em declarar a separação de fato?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-10">
-              A declaração de separação de fato em cartório pode ser o primeiro passo para organizar juridicamente o fim da convivência. Entre em contato para apresentar sua situação e verificar as medidas adequadas.
+              A declaração de Separação de Fato e Inventário Extrajudicial pode ser o primeiro passo para organizar juridicamente o fim da convivência. Entre em contato para apresentar sua situação e verificar as medidas adequadas.
             </p>
             <button
               onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
