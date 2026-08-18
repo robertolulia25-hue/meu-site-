@@ -78,10 +78,10 @@ const DireitoConsumidor = () => {
           >
             <div className="gold-line mb-6" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Direito do <span className="text-gradient-gold">Consumidor</span>
+              Advogado de Direito do <span className="text-gradient-gold">Consumidor em São Paulo</span>
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-6">
-              Problemas com empresas, cobranças indevidas, produtos ou serviços que não foram resolvidos? Entenda seus direitos e saiba como podemos avaliar o seu caso.
+              Problemas com empresas, cobranças indevidas, produtos com defeito ou serviços que não foram resolvidos? Entenda seus direitos e saiba como podemos avaliar o seu caso.
             </p>
             <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
               Cada situação é analisada individualmente, considerando os fatos, os documentos disponíveis e as possibilidades jurídicas do caso.

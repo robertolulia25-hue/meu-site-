@@ -7,9 +7,9 @@ import { breadcrumbSchema, serviceSchema } from "@/lib/seo";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
-const PAGE_TITLE = "Advogado de Direito Médico e da Saúde em São Paulo — Roberto Lima";
+const PAGE_TITLE = "Advogado de Plano de Saúde em São Paulo | Negativa de Cobertura — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Advogado em São Paulo para negativa de plano de saúde, cobertura de tratamentos, medicamentos, home care e questões de responsabilidade médica. Análise individual do caso.";
+  "Advogado em São Paulo para problemas com planos de saúde: negativa de cobertura, medicamentos, tratamentos, cirurgias, home care e cancelamento de atendimento. Também analisamos questões envolvendo SUS e responsabilidade médica, conforme o caso.";
 
 const problemas = [
   {
@@ -107,7 +107,7 @@ const DireitoMedico = () => {
         path="/direito-medico"
         schemas={[
           serviceSchema({
-            name: "Advogado de Direito Médico e da Saúde em São Paulo",
+            name: "Advogado de Plano de Saúde em São Paulo",
             description: PAGE_DESCRIPTION,
             path: "/direito-medico",
           }),
@@ -135,10 +135,10 @@ const DireitoMedico = () => {
           >
             <div className="gold-line mb-6" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Direito Médico e da Saúde
+              Advogado de Plano de Saúde em São Paulo
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-6">
-              Está enfrentando uma negativa de tratamento, problema com plano de saúde, dificuldade para obter medicamento ou tratamento, ou uma situação envolvendo atendimento médico ou hospitalar? Entenda o que precisa ser analisado e quais caminhos podem ser considerados.
+              Está enfrentando uma negativa de cobertura, dificuldade para obter medicamento ou tratamento, interrupção de home care, problema com cirurgia ou atendimento médico? Entenda o que precisa ser analisado e quais caminhos podem ser considerados.
             </p>
             <div className="gold-line mb-6" />
           </motion.div>
