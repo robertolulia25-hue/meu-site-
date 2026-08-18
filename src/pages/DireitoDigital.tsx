@@ -191,10 +191,10 @@ const DireitoDigital = () => {
           >
             <div className="gold-line mb-6" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Direito Digital: atuação em problemas envolvendo contas, redes sociais e relações digitais
+              Advogado de Direito Digital em São Paulo
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-8">
-              Bloqueio ou perda de acesso a contas, perfis falsos, golpes praticados por meios digitais, comentários ofensivos, problemas com e-mails e questões envolvendo proteção de dados podem gerar prejuízos e exigir análise jurídica. Cada situação deve ser examinada de acordo com os fatos, as provas disponíveis e a atuação das plataformas ou demais envolvidos.
+              Contas bloqueadas ou invadidas, perfis falsos, golpes e fraudes praticados por meios digitais, comentários ofensivos que atingem a honra e questões de proteção de dados (LGPD) podem gerar prejuízos e exigir análise jurídica. Cada situação é examinada de acordo com os fatos, as provas disponíveis e a atuação das plataformas ou demais envolvidos.
             </p>
             <button
               onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
