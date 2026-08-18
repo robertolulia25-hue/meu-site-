@@ -4,16 +4,14 @@ import logo from "@/assets/logo-rl.png";
 
 const areas = [
   { label: "Direito do Consumidor", to: "/direito-consumidor" },
-  { label: "Produto com defeito", to: "/direito-consumidor/produto-com-defeito" },
   { label: "Direito Bancário", to: "/direito-bancario" },
-  { label: "Direito Médico e da Saúde", to: "/direito-medico" },
+  { label: "Direito Médico", to: "/direito-medico" },
 ];
 
 const areas2 = [
-  { label: "Direito Digital e LGPD", to: "/direito-digital" },
-  { label: "Separação de fato em cartório", to: "/separacao-extrajudicial" },
-  { label: "Divórcio judicial", to: "/divorcio-judicial" },
-  { label: "Elaboração e revisão de contratos", to: "/elaboracao-de-contratos" },
+  { label: "Direito Digital", to: "/direito-digital" },
+  { label: "Separação de Fato e Inventário Extrajudicial", to: "/separacao-extrajudicial" },
+  { label: "Elaboração de Contratos", to: "/elaboracao-de-contratos" },
 ];
 
 const Footer = () => {
