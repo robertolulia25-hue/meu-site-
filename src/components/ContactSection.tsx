@@ -79,7 +79,9 @@ const ContactSection = () => {
                   </div>
                 </div>
               </div>
+              </Link>
             </motion.div>
+
 
             {/* Phone */}
             <motion.a
