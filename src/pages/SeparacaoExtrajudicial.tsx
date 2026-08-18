@@ -104,7 +104,18 @@ const etapas = [
   {
     number: "02",
     title: "Definição da medida adequada",
-    text: "Avaliação sobre o cabimento da declaração de Separação de Fato e Inventário Extrajudicial e sobre a necessidade de outras medidas, como divórcio, partilha ou questões relativas aos filhos.",
+    text: (
+      <>
+        Avaliação sobre o cabimento da declaração de Separação de Fato e Inventário Extrajudicial e sobre a necessidade de outras medidas, como{" "}
+        <Link
+          to="/divorcio-judicial"
+          className="text-gold hover:text-gold/80 underline decoration-gold/30 underline-offset-4 transition-colors"
+        >
+          divórcio judicial
+        </Link>
+        , partilha ou questões relativas aos filhos.
+      </>
+    ),
   },
   {
     number: "03",
