@@ -191,10 +191,10 @@ const DireitoBancario = () => {
           >
             <div className="gold-line mb-6" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-              Direito Bancário: atuação em fraudes e problemas com bancos
+              Advogado de Direito Bancário em São Paulo
             </h1>
             <p className="font-serif-elegant text-xl md:text-2xl text-muted-foreground mb-8">
-              Fraudes bancárias, PIX não reconhecido, empréstimos não contratados, transações indevidas e falhas de segurança podem causar prejuízos significativos. Quando o banco não soluciona o problema de forma adequada, é possível analisar a responsabilidade da instituição e as medidas jurídicas cabíveis para proteger seus direitos.
+              Fraudes bancárias, golpe do PIX, PIX não reconhecido, empréstimos não contratados, transações não reconhecidas e cobranças indevidas: cada caso é analisado individualmente para avaliar a responsabilidade do banco e as medidas jurídicas cabíveis.
             </p>
             <button
               onClick={() => navigate("/obrigado", { state: { message: WHATSAPP_MESSAGE } })}
