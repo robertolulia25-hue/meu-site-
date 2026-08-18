@@ -37,7 +37,6 @@ export const legalServiceSchema = {
     "Direito Digital e LGPD",
     "Divórcio Judicial",
     "Separação de Fato e Inventário Extrajudicial",
-    "Inventário extrajudicial",
     "Elaboração e revisão de contratos",
   ],
   provider: { "@id": `${SITE_URL}/#person` },

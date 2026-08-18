@@ -24,9 +24,9 @@ import {
 } from "@/components/ui/accordion";
 
 const PAGE_TITLE =
-  "Direito Digital | Contas, Redes Sociais, Fraudes e Proteção de Dados — Roberto Lima";
+  "Advogado de Direito Digital em São Paulo | Contas, Golpes e LGPD — Roberto Lima";
 const PAGE_DESCRIPTION =
-  "Atuação jurídica em problemas digitais: contas bloqueadas ou invadidas, perfis falsos, golpes na internet, comentários ofensivos, proteção de dados (LGPD) e contratos eletrônicos.";
+  "Advogado em São Paulo para problemas digitais: contas bloqueadas ou invadidas, perfis falsos, golpes na internet, comentários ofensivos, proteção de dados (LGPD) e contratos eletrônicos.";
 const PAGE_URL = "https://www.robertolimajuridico.com.br/direito-digital";
 const WHATSAPP_MESSAGE = "Olá, gostaria de falar sobre um problema de Direito Digital.";
 
