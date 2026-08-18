@@ -39,14 +39,17 @@ const ContactSection = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {/* WhatsApp - Featured */}
             <motion.div
-              onClick={() => navigate("/obrigado")}
-              className="md:col-span-2 group cursor-pointer"
+              className="md:col-span-2 group"
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
-              whileHover={{ scale: 1.01 }}
-              whileTap={{ scale: 0.99 }}
             >
+              <Link
+                to="/obrigado"
+                aria-label="Iniciar conversa pelo WhatsApp com Roberto Lima, advogado"
+                className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-sm"
+              >
+
               <div className="relative bg-gradient-card p-8 md:p-10 rounded-sm border border-gold/30 hover:border-gold/60 transition-all duration-500 shadow-gold hover:shadow-lg overflow-hidden">
                 {/* Background glow */}
                 <div className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
